@@ -442,11 +442,14 @@ a:hover, a:active { text-decoration: none; color:black }
 .portfolio{
     background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(48,48,48,1) 91%, rgba(48,48,48,1) 100%);
    
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+}
+.portfolioimg{
+    padding: 0;
 }
 
 ul{
