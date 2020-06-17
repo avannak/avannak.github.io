@@ -20,7 +20,7 @@ body{
     top: 0;
     width: 100%;
     background-size: cover;
-     height: 750px;
+     height: 768px;
      
     box-shadow: 5px 5px 5px rgba(0,0, 0, 0.5);
     
@@ -50,7 +50,7 @@ body{
     height: 100%;
     background: url('./pictures/movingcloud.png');
     animation: animate 500s linear infinite;
-    
+    z-index: -1;
 }
 @keyframes animate
 {
@@ -99,7 +99,15 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-a { color:rgb(255, 255, 255)} /* Globally */
+a { -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    color:rgb(255, 255, 255)
+} /* Globally */
 
 /* Each state */
 
@@ -327,30 +335,23 @@ a:hover, a:active { text-decoration: none; color:black }
 
 }
 #profilepic{
-    top: 150px;
-    background: url("./pictures/art2.jpeg");
-    display: flex;
-    flex-direction: row;
-    position: relative;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin: 0 auto;
+    text-align: center;
+    top: 200px;
+    background: url("./pictures/art2.jpeg");
+    position: relative;
+    background-position: top left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
     border-radius: 50%;
+    align-content: center;
     background-size: cover;
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: top center;
-    
-     padding:15px;
-     z-index: -1;
-     
-  
+    background-repeat: no-repeat;
      opacity: .9;
      transition: 0.8s;
+     z-index: -1;
 }
 #profilepic:hover{
     opacity: 1;
