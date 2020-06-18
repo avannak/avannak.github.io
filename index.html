@@ -9,27 +9,28 @@
   crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cabin+Sketch&family=Flavors&family=Londrina+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-
+        
         <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <object data="your.svg" type="image/svg+xml">
+            
             <img src="./pictures/icons/arrow.svg" />
-          </object>
+          
         </button>
 
 
         <div class="navbar" id="navigationbar">
           
             <a href="index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a class="scrollTo" href="#about">About</a>
+            <a class="scrollTo" href="#services">Services</a>
+            <a class="scrollTo" href="#portfolio">Portfolio</a>
+            <a class="scrollTo" href="#contact">Contact</a>
           </div>
           <div class="menu-toggler">
             <div class="bar half start"></div>
@@ -46,20 +47,26 @@
     
         
        <div data-aos="fade-down"  data-aos-duration="4000" class="landingtext">
+           
             <div class="openingpicture" id="openingpic">
                 <div class="movingcloud"></div>
-
             </div>
+            <div class="openingpicture2" id="openingpic2">
+                <div class="movingcloud"></div>
+            </div>
+                
+
+            
            <div class="title"><h1>Arthur Vannakittikun</h1></div>
           
            <div class="description"><h2>Developer/Artist</h2></div>
            <div class="navbar2" id="navigationbar2">
           
-            <a style ="text-decoration: none" href="index.html">Home</a>
-            <a style ="text-decoration: none" href="#about">About</a>
-            <a style ="text-decoration: none" href="#services">Services</a>
-            <a style ="text-decoration: none" href="#portfolio">Portfolio</a>
-            <a style ="text-decoration: none" href="#contact">Contact</a>
+            <a class="scrollTo" style ="text-decoration: none" href="index.html">Home</a>
+            <a class="scrollTo" style ="text-decoration: none" href="#about">About</a>
+            <a class="scrollTo" style ="text-decoration: none" href="#services">Services</a>
+            <a class="scrollTo" style ="text-decoration: none" href="#portfolio">Portfolio</a>
+            <a class="scrollTo" style ="text-decoration: none" href="#contact">Contact</a>
           </div>
            
        </div>
@@ -77,10 +84,10 @@
                 <div data-aos="fade-up"
                 data-aos-duration="2000" class="aboutdetails">
                     <div class="aboutheading">
-                            <h1>About</h1>
-                            <h6>Myself</h6>
+                            <h1>About Myself</h1>
+                            
                     </div>
-                        <p>I am a Computer Science student at San Francisco State University with a passion for web design and programming. My dream is to share my creative vision and passion with others to create an extraordinary and visually pleasurable user experience. I am also a part-time songwriter and music producer.</p> 
+                        <p>I am a Computer Science student at San Francisco State University with a passion for web design and programming. My dream is to share my creative vision and passion with others to create an extraordinary and visually pleasurable user experience. When i am not coding my life away, I produce music and write songs.</p> 
                                    </div>
                 <div data-aos="fade-up"
                 data-aos-duration="2000" class="socialmedia">
@@ -149,7 +156,7 @@
                     <span class=""></span>
                 </div>
             </div>
-            <h1>Web Design</h1>
+            <h1>UI/UX Web Design</h1>
             <p>I am a Computer Science student at San Francisco State University with a passion for web design and programming. My dream is to share my creative vision and passion with others to create an extraordinary and visually pleasurable user experience. I am also a part-time songwriter and music producer. </p>
             <div class="skill">
                 <div class="iconcontainer">
@@ -157,7 +164,7 @@
                 </div>
             </div>
             <h1>Music Production/Singing</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reprehenderit amet libero tempora hic obcaecati, possimus cum inventore repudiandae reiciendis necessitatibus doloremque, perferendis cupiditate neque accusantium aliquam eius quidem vero!</p>
+            <p>I have always been sonically influenced by many Pop and R&B tunes. Combined with the tools of Logic Pro X and my singing, I can manufacture high quality productions.</p>
         
         
         
@@ -169,17 +176,23 @@
         data-aos-duration="2000" class="container">
             <div class="sectionheading">
                 <h1>Portfolio</h1>
-                <h6>Here is some of my work</h6>
+                <h6>Take a peek at some of my work</h6>
             </div>
         </div>
         <ul>
             <li>
                 <div data-aos="fade-up"
                 data-aos-duration="2000" class="wavyboycontainer">
+                    <span id="wavyboytitle">
+                        <h1>【ｗａｖｙ　ｂｏｙ】synthesizer</h1>
+                    </span>
+                   
                     
-                    <h1>wavy boy Synthesizer</h1>
                    
                     <h6>Blog Website</h6>
+                    
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                     <p>This here is some good shit you know what i'm sayin</p>
                     
                 </div>
@@ -189,19 +202,26 @@
                         <img src="" alt="">
                     </div>
                     <a href="#" class="cta">Click To View</a>
+                    
                 </div>
+                
             </li>
             <li>
                 <div data-aos="fade-up"
                 data-aos-duration="2000"class="weatherapp">
                 <div data-aos="fade-up"
                 data-aos-duration="2000" class="weatherappcontainer">
+                    <span id= "weathertitle">
+                        <h1>Weather Wherever</h1>
+                    </span>
                     
-                    <h1>Weather Wherever</h1>
                    
                     <h6>Blog Website</h6>
+                    
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                     <p>Right here is my weather app designed for mobile devices, it uses geolocation to detect user location and displays the temperature. You can also search for any location for the temperature using google places api. it is some good shit man check it out</p>
-                   ]
+                   
                 </div>
                     <div class="portfolioimg" id="weatherappimg">
                         <img src="" alt="">
@@ -216,10 +236,16 @@
           
                     <div data-aos="fade-up"
                     data-aos-duration="2000" class="musicwebsitecontainer">
-                    <h1>Music Website Player</h1>
+                    <span id= "musicwebsitetitle">
+                        <h1>Music Website Player</h1>
+                    </span>
+                    
                     
                     <h6>Blog Website</h6>
-                    <p>This a music website player that I built using JS, HTML/CSS, JQuery, and HTML5 Player</p>
+                    
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    <p>This a music website player that I built using JS, HTML/CSS, JQuery, and HTML5 Player. Vocals and production done with Logic Pro X and yours truly.</p>
                         
                         <div class="portfolioimg" id="musicwebsiteimg">
                             <img src="" alt="">
@@ -237,10 +263,15 @@
            
                     <div data-aos="fade-up"
                     data-aos-duration="2000" class="snakegamecontainer">
-
+                    <span id="snakegametitle">
+                        <h1>Snakes in a i(Frame)</h1>
+                    </span>
+                   
                     <h6>Blog Website</h6>
-                    <p>This the classic snake game built using JS, HTML/CSS, JQuery, and Your mom</p>
-                        <h1>Snake Game</h1>
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    <p>This the classic snake game built using JS, HTML/CSS, JQuery, and your mom</p>
+                       
                         <div class="portfolioimg" id="snakegameimg">
                             <img src="" alt="">
                         </div>
@@ -254,10 +285,14 @@
             <li>
                 <div data-aos="fade-up"
                 data-aos-duration="2000" class="lavalampcontainer">
+                    <span id= "lavatitle">
+                        <h1>Lava Lamporium</h1>
+                    </span>
                     
-                    <h1>Lava Lampuro</h1>
                     <h6>Blog Website</h6>
-                    <p>This a lavalamp app built using JS, HTML/CSS, JQuery, and Your mom</p>
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    <p>This a lavalamp app built using JS, HTML/CSS, JQuery, and your mom</p>
                     <div class="lavalampo">
                         <div class="portfolioimg" id="lavalampimg">
                             <img src="" alt="">
@@ -279,10 +314,17 @@
     
     </section>
     <section class="contact" id="contact">
-        <div class="container">
+        <div class="sunset" id="sunsetpic">
+
+            
+        </div>
+        <div data-aos="fade-down"  data-aos-duration="4000" class="container">
             <div class="sectionheading">
                 <h1>Contact</h1>
                 <h6>Let's work together</h6>
+            </div>
+            <div class="resume" id="resume">
+                Click here to download my resume
             </div>
             <form class= "contactform" action="">
                 <ul style="list-style-type: none">
@@ -300,6 +342,7 @@
                         <label for="service">Services:</label>
                         <input type="services" name="services" id="services">
                     </li>
+                    <input type="submit" value="Submit">
                 </ul>
                
                

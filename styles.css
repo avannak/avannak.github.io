@@ -9,6 +9,10 @@ body{
   
     
 }
+.allcontent{
+    
+    background: linear-gradient(#1f1f1f 0%, #27283b 30%, #1f1f1f 100%);
+}
 .openingpicture{
     padding: 0;
     background: url("./pictures/artprofile1.jpg");
@@ -35,12 +39,91 @@ body{
      opacity: .9;
      transition: 0.8s;
 
-}
-.openingpicture:hover{
-    opacity: .75;
-}
-.movingcloud{
+     -webkit-animation-delay: 3s;
+     animation-delay: 3s;
+     -webkit-animation-name: fade;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-duration: 11s;
+     animation-name: fade;
+     animation-iteration-count: infinite;
+     animation-duration: 11s;
+     
     
+     
+
+}
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    13% {opacity: 0;}
+    14% {opacity: 1;}
+    15% {opacity: 1;}
+    17% {opacity: 1;}
+    20% {opacity: 1;}
+    21% {opacity: 1;}
+    22% {opacity: 1;}
+    30% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    65% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 1;}
+
+    100% {opacity: 1;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    13% {opacity: 0;}
+    14% {opacity: 1;}
+    15% {opacity: 1;}
+    17% {opacity: 1;}
+    20% {opacity: 1;}
+    21% {opacity: 1;}
+    22% {opacity: 1;}
+    30% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 1;}
+    65% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.openingpicture:hover{
+    opacity: 1;
+}
+.openingpicture2{
+    padding: 0;
+    background: url("./pictures/artprofile1anim2.jpg");
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    display: block;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+     height: 768px;
+     
+    box-shadow: 5px 5px 5px rgba(0,0, 0, 0.5);
+    
+     
+     background-repeat: repeat-y;
+     background-position: top center;
+    
+     padding:0;
+     z-index: -2;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: 1;
+     transition: 0.8s;
+    
+     -webkit-animation-delay: -2s;
+}
+
+.movingcloud{
+    opacity: .7;
    
     padding: 0;
     position: absolute;
@@ -94,7 +177,8 @@ body{
     
 }
 a:link {
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    padding: 3px;
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
@@ -114,26 +198,34 @@ a { -webkit-touch-callout: none; /* iOS Safari */
 a:visited { text-decoration: none; color:rgb(255, 255, 255); }
 a:hover { text-decoration: none; color:rgb(5, 5, 5); }
 a:focus { text-decoration: none; color:yellow; }
-a:hover, a:active { text-decoration: none; color:black }
+a:hover, a:active { 
+    text-decoration: none; 
+    color:rgba(255, 255, 255, 0.274); 
+    transition: all .2s ease-in-out;
+    
+
+}
 .navbar2{
+    padding: 15px;
    top: 300px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     z-index: 2;
-   
-    
-    flex-direction: column;
-    
-    justify-content: flex-start;
+    opacity: .6;
+    display: block;
+    box-sizing: border-box;
     overflow: hidden;
-    background-color: transparent;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.76);
     position: relative; /* Set the navbar to fixed position */
     /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    opacity: .8;
+    opacity: .9;
     transition: 605ms ease-out;
-    border-radius: 3px;
+    border-radius: 2px;
+    border-width: 6px;
+    border-style: double;
 }
 .navbar {
     
@@ -146,31 +238,38 @@ a:hover, a:active { text-decoration: none; color:black }
     flex-direction: column;
     left: 0;
     justify-content: flex-start;
-    overflow: hidden;
+    text-overflow: hidden;
     background-color: transparent;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 20%; /* Full width */
     opacity: .8;
     transition: 605ms ease-out;
-    border-radius: 3px;
+    border-radius: 2px;
     
+  }
+  .navbar2:hover{
+    
+    background-color: rgb(0, 0, 0);
   }
   .navbar.open {
     
-     
+    
       display: inline;
       display: flex;
       flex-direction: column;
       left: 0;
       justify-content: flex-start;
-    overflow: hidden;
+      
+     
+      
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 25%; /* Full width */
     opacity: 1;
-    border-radius: 5px;
+    border-radius: 2px;
+    overflow: hidden;
    
   }
   
@@ -183,10 +282,12 @@ a:hover, a:active { text-decoration: none; color:black }
     text-align-last: left;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   /* Change background on mouse-over */
   .navbar a:hover {
+      
     background: #ddd;
     color: black;
   }
@@ -285,13 +386,13 @@ a:hover, a:active { text-decoration: none; color:black }
     animation-duration: 1s;
     
     position: relative;
-    top: 200px;
+    top: 250px;
     padding: 0;
     left: 0;
     font-size: 1em;
     color: white;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
-    opacity: 0.8;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    opacity: 0.90;
     transition: 0.9s;
 }
 @keyframes fadein{
@@ -317,12 +418,12 @@ a:hover, a:active { text-decoration: none; color:black }
     
     
     position: relative;
-    top: 200px;
+    top: 280px;
     padding: 0;
     left: 0;
     font-size: 1em;
     color: white;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     opacity: 0.8;
     transition: 0.9s;
 }
@@ -338,8 +439,8 @@ a:hover, a:active { text-decoration: none; color:black }
     display: block;
     margin: 0 auto;
     text-align: center;
-    top: 200px;
-    background: url("./pictures/art2.jpeg");
+    top: 30px;
+    background: url("./pictures/art3.jpeg");
     position: relative;
     background-position: top left;
     width: 200px;
@@ -352,6 +453,7 @@ a:hover, a:active { text-decoration: none; color:black }
      opacity: .9;
      transition: 0.8s;
      z-index: -1;
+     
 }
 #profilepic:hover{
     opacity: 1;
@@ -392,6 +494,7 @@ a:hover, a:active { text-decoration: none; color:black }
     text-align: center;
 }
 .about{
+    bottom: 20px;
     padding: 0px 0px 300px 0px;
     display: flex;
     flex-direction: column;
@@ -441,8 +544,8 @@ a:hover, a:active { text-decoration: none; color:black }
     font-size: 2rem;
 }
 .portfolio{
-    background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(48,48,48,1) 91%, rgba(48,48,48,1) 100%);
-   
+    background: linear-gradient(180deg, #252632 0%,#2b303d, #2e3d6b 100%);
+   z-index: 0;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -468,19 +571,31 @@ ul{
    
 }
 .wavyboy{
+    margin: 0;
     padding: 0px 0px 300px 0px;
 }
 .weatherapp{
+    
+    margin: 0;
     padding: 0px 0px 300px 0px;
 }
 .musicwebsitecontainer{
+    margin: 0;
     padding: 0px 0px 300px 0px;
 }
 .snakegamecontainer{
+    margin: 0;
     padding: 0px 0px 300px 0px;
 }
 .lavalampcontainer{
+    margin: 0;
     padding: 0px 0px 300px 0px;
+}
+#wavyboytitle{
+    font-size: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    
 }
 #wavyboyimg{
     background: url("./pictures/wavyboy.png");
@@ -490,7 +605,7 @@ ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     background-size: contain;
      height: 300px;
      min-height:100%;
@@ -505,6 +620,10 @@ ul{
      border-color: rgba(0,0, 0, 0.5);
      opacity: .9;
      transition: 0.8s;
+}
+#weathertitle{
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
 }
 #weatherappimg{
     background: url("./pictures/weatherapp.png");
@@ -514,7 +633,7 @@ ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     background-size: contain;
      height: 300px;
      min-height:100%;
@@ -530,6 +649,10 @@ ul{
      opacity: .9;
      transition: 0.8s;
 }
+#musicwebsitetitle{
+    font-size: 24px;
+    font-family: 'Bellefair', serif;
+}
 #musicwebsiteimg{
     background: url("./pictures/musicplayer.png");
     display: flex;
@@ -538,7 +661,7 @@ ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     
      height: 300px;
      min-height:100%;
@@ -555,6 +678,10 @@ ul{
      opacity: .9;
      transition: 0.8s;
 }
+#snakegametitle{
+    font-size: 24px;
+    font-family: 'Londrina Sketch', cursive;
+}
 #snakegameimg{
     background: url("./gifs/snake.gif");
     display: flex;
@@ -563,7 +690,7 @@ ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     background-size: contain;
      height: 300px;
      min-height:100%;
@@ -579,6 +706,13 @@ ul{
      opacity: .9;
      transition: 0.8s;
 }
+#lavatitle{
+    font-size: 24px;
+    font-family: 'Flavors', cursive;
+}
+#portfolio{
+z-index: 1;
+}
 #lavalampimg{
     background: url("./gifs/canvas.gif");
     display: flex;
@@ -587,7 +721,7 @@ ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     background-size: contain;
      height: 300px;
      min-height:100%;
@@ -604,6 +738,8 @@ ul{
      transition: 0.8s;
 }
 .contact{
+    
+    background:linear-gradient(#2e3d6b 0%,#29314b 50%, #222222 100%);
     padding: 0px 0px 300px 0px;
     display: flex;
     flex-direction: row;
@@ -613,7 +749,7 @@ ul{
    
 }
 .contactform{
-   
+    padding: 100px;
 }
 .container{
     
@@ -623,19 +759,59 @@ ul{
     top: 100%;
 }
 
+
 .footer{
-    background-color: rgba(20, 20, 20, 0.733);
+    background:#222222;
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 50px;
 }
 #footer{
-
+    
     position: relative;
-    top: 50%;
+    top: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+h1{
+    opacity: .9;
+    transition: .5s;
+}
+h1:hover{
+    opacity: 1;
+}
+h6{
+    opacity: .8;
+    transition: .5s;
+}
+h6:hover{
+    opacity: 1;
+}
+label{
+    opacity: .8;
+    transition: .5s;
+}
+label:hover{
+    opacity: 1;
+}
+p{
+    opacity: .9;
+    transition: .5s;
+}
+p:hover{
+    opacity: 1;
+}
+h2{
+    opacity: .8;
+    transition: .5s;
+}
+h2:hover{
+    opacity: 1;
+}
+input{
+    padding: 10px;
+
 }
