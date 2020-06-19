@@ -123,7 +123,7 @@ body{
 }
 
 .movingcloud{
-    opacity: .6;
+    opacity: .43;
    
     padding: 0;
     position: absolute;
@@ -453,6 +453,7 @@ a:hover, a:active {
      opacity: .9;
      transition: 0.8s;
      z-index: -1;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
      
 }
 #profilepic:hover{
@@ -544,7 +545,7 @@ a:hover, a:active {
     font-size: 2rem;
 }
 .portfolio{
-    background: linear-gradient(180deg, #252632 0%,#2b303d, #2e3d6b 100%);
+    background: linear-gradient(180deg, #242530 0%,#2b303d, #2e3d6b 100%);
    z-index: 0;
     padding: 5px;
     display: flex;
