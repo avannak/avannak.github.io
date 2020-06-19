@@ -1,5 +1,33 @@
 AOS.init();
 var openingpic = document.getElementById("openingpic");
+var showwavydescbutton = document.getElementById("showwavydescription");
+var wavydesc = document.getElementById("wavydescription");
+
+
+  $(document).ready(function() {
+    $('#box').click(function() {
+        $(this).find(".hidden").toggleClass('open');
+    });
+});
+  $("#showadultingappdescription").click(function(){
+    $("#adultingappdescription").toggle();
+  });
+  $("#showmusicwebsitedescription").click(function(){
+    $("#musicwebsitedescription").toggle();
+  });
+  $("#showweatherwebsitedescription").click(function(){
+    $("#weatherappdescription").toggle();
+  });
+  $("#showsnakegamedescription").click(function(){
+    $("#snakegamedescription").toggle();
+  });
+  $("#showlavalampappdescription").click(function(){
+    $("#lavalampappdescription").toggle();
+  });
+
+
+
+
 
 var act = $('.navbar').hasClass('open');
 $(document).ready(function(){

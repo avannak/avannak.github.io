@@ -440,7 +440,8 @@ a:hover, a:active {
     margin: 0 auto;
     text-align: center;
     top: 30px;
-    background: url("./pictures/art7.jpeg");
+    background: url("./pictures/art73.jpeg");
+    
     position: relative;
     background-position: center center;
     width: 200px;
@@ -455,6 +456,35 @@ a:hover, a:active {
      z-index: -1;
      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
      
+}
+#profilepic2{
+    filter: blur(50px) saturate(1);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 30px;
+    background: url("./pictures/art8.jpeg");
+    
+    position: absolute;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+    align-content: center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+     opacity: 1;
+     transition: 0.8s;
+     z-index: -2;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+}
+#profilepic::after{
+    
 }
 #profilepic:hover{
     opacity: 1;
@@ -535,29 +565,96 @@ a:hover, a:active {
 }
 .services{
     
+    background: linear-gradient(180deg, #212227, #1d267349, #24252f 100%);
     padding: 0px 0px 300px 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
 }
+.skillscontainer{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-style: double;
+    border-radius: 0px;
+    border-width: 10px;
+    border-left: hidden;
+    border-right: hidden;
+    opacity: 1;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.skillscontainer:hover{
+    opacity: 1;
+}
 .sectionheading{
     font-size: 2rem;
 }
+#uiuxdesign{
+    
+    text-align: center;
+}
+#musicproduction{
+    text-align: center;
+}
+#mygoal{
+    
+    word-wrap: break-word;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+text-align: center;
+position: relative;
+width: 60%;
+
+
+}
+#ihavealways{
+    word-wrap: break-word;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+text-align: center;
+position: relative;
+width: 60%;
+}
+#checkoutmysong{
+    color: khaki;
+}
+#iframe{
+    
+  
+    /* Center the video */
+    position: relative;
+    z-index: 0;
+   
+}
+
 .portfolio{
-    background: linear-gradient(180deg, #242530 0%,#2b303d, #2e3d6b 100%);
+    word-wrap: break-word;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+text-align: center;
+position: relative;
+width: 62%;
+    background: linear-gradient(180deg, #24262f 0%,#68609a8e 20%, #2b303d, #2e3d6b 100%);
    z-index: 0;
     padding: 5px;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+    
 }
 .portfolioimg{
     padding: 0;
 }
 
 ul{
+    
     padding: 0;
     left: 0;
     list-style: none;
@@ -572,8 +669,123 @@ ul{
    
 }
 .wavyboy{
+    
     margin: 0;
     padding: 0px 0px 300px 0px;
+}
+#showwavydescription{
+    background:none;
+    color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    
+}
+#wavydescription{
+    visibility: hidden;
+    height:auto;
+    background:rgba(0, 0, 0, 0.541);
+    color:#fff;
+    cursor:pointer;
+}
+
+#wavydescriptionHidden{
+    height: 0px;
+    -webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+    
+  
+}
+/* oooooo*/
+#box {
+    height:auto;
+    background:rgba(0, 0, 0, 0.589);
+    color:#fff;
+    cursor:pointer;
+}
+.hidden {
+    height:0px;
+       -webkit-transition:height, 0.5s linear;
+    -moz-transition: height, 0.5s linear;
+    -ms-transition: height, 0.5s linear;
+    -o-transition: height, 0.5s linear;
+    transition: height, 0.5s linear;
+}
+.hidden.open {
+        height:200px;
+     -webkit-transition:height, 0.5s linear;
+    -moz-transition: height, 0.5s linear;
+    -ms-transition: height, 0.5s linear;
+    -o-transition: height, 0.5s linear;
+    transition: height, 0.5s linear;
+}
+
+
+#showweatherappdescription{
+    background:none;
+    color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#weatherappdescription{
+    display: none;
+}
+#showadultingappdescription{
+    background:none;
+    color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#adultingappdescription{
+    display: none;
+    
+}
+#showmusicwebsitedescription{
+    background:none;
+    color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#musicwebsitedescription{
+    display: none;
+}
+#showsnakegamedescription{
+    background:none;
+    color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#snakegamedescription{
+    display: none;
+}
+#showlavalampappdescription{
+    background:none;
+    color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#lavalampappdescription{
+    display: none;
 }
 .weatherapp{
     
@@ -747,6 +959,7 @@ ul{
     font-family: 'Flavors', cursive;
 }
 #portfolio{
+    
 z-index: 1;
 }
 #lavalampimg{
@@ -834,7 +1047,7 @@ label:hover{
     opacity: 1;
 }
 p{
-    padding: 10px;
+   
     opacity: .9;
     transition: .5s;
 }
