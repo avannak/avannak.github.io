@@ -5,8 +5,9 @@ var wavydesc = document.getElementById("wavydescription");
 
 
   $(document).ready(function() {
-    $('#box').click(function() {
-        $(this).find(".hidden").toggleClass('open');
+    $('#view_details').on('click', function(){
+        $('#hidden').toggle();
+    
     });
 });
   $("#showadultingappdescription").click(function(){
@@ -15,7 +16,7 @@ var wavydesc = document.getElementById("wavydescription");
   $("#showmusicwebsitedescription").click(function(){
     $("#musicwebsitedescription").toggle();
   });
-  $("#showweatherwebsitedescription").click(function(){
+  $("#showweatherappdescription").click(function(){
     $("#weatherappdescription").toggle();
   });
   $("#showsnakegamedescription").click(function(){
@@ -47,6 +48,7 @@ $(document).ready(function(){
     });
     
 });
+
 var navbar = document.getElementById('navigationbar');
 navbar.addEventListener("mouseout", function(){
     navbar.style.background = "transparent";

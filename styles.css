@@ -1,5 +1,39 @@
+.texture {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./pictures/rocky-wall.png');
+  }
+.rockybackground{
+    z-index: 1;
+    min-height: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+   
+}
 body{
-    background-color: rgb(31, 31, 31);
+    margin: auto;
+   
+    min-height: 100%;
+    background-repeat:repeat;
+background-attachment: fixed;
+background-position: center;
+
+background-image: url('./pictures/rocky-wall.png'), linear-gradient(#261c23 0%,#29314b 50%, #222222 100%);
+   
+
+
+
+ 
+background-color: #261c23;
+
     
     padding: 0;
     font-family: 'Nanum Myeongjo', serif;
@@ -11,7 +45,7 @@ body{
 }
 .allcontent{
     
-    background: linear-gradient(#1f1f1f 0%, #27283b 30%, #1f1f1f 100%);
+    /* background: linear-gradient(#0c0d12 0%, #27283b 30%, #1f1f1f 100%); */
 }
 .openingpicture{
     padding: 0;
@@ -19,6 +53,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
+    margin: auto;
     
     display: block;
     top: 0;
@@ -26,7 +61,7 @@ body{
     background-size: cover;
      height: 768px;
      
-    box-shadow: 5px 5px 5px rgba(0,0, 0, 0.5);
+    
     
      
      background-repeat: repeat-y;
@@ -106,7 +141,7 @@ body{
     background-size: cover;
      height: 768px;
      
-    box-shadow: 5px 5px 5px rgba(0,0, 0, 0.5);
+     margin: auto;
     
      
      background-repeat: repeat-y;
@@ -123,7 +158,7 @@ body{
 }
 
 .movingcloud{
-    opacity: .43;
+    opacity: .30;
    
     padding: 0;
     position: absolute;
@@ -263,7 +298,7 @@ a:hover, a:active {
       
      
       
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 25%; /* Full width */
@@ -431,11 +466,12 @@ a:hover, a:active {
     opacity: 1;
 }
 .profilesection{
- 
+
  
 
 }
 #profilepic{
+    
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -454,18 +490,18 @@ a:hover, a:active {
      opacity: .9;
      transition: 0.8s;
      z-index: -1;
-     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  
      
 }
 #profilepic2{
-    filter: blur(50px) saturate(1);
+    filter: blur(10px) saturate(1);
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     top: 30px;
-    background: url("./pictures/art8.jpeg");
+    background: url("./pictures/art73.jpeg");
     
     position: absolute;
     background-position: center center;
@@ -478,10 +514,10 @@ a:hover, a:active {
     
     background-size: cover;
     background-repeat: no-repeat;
-     opacity: 1;
+     opacity: .5;
      transition: 0.8s;
      z-index: -2;
-     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+   
 }
 #profilepic::after{
     
@@ -489,14 +525,55 @@ a:hover, a:active {
 #profilepic:hover{
     opacity: 1;
 }
+#profilepic2:hover{
+    opacity: 1;
+}
 
 .aboutheading{
-   font-size: 2rem;
+z-index: 3;
+ 
+   
+ padding: 0;
+ 
+ 
+   font-size: 1.2rem;
+   word-wrap: break-word;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   top: 40px;
+text-align: center;
+position: relative;
+
+}
+#movingcloud2{
+    margin: auto;
+   opacity: .04;
+    min-height: 100%;
+    background-repeat:repeat;
+background-attachment: fixed;
+background-position: center;
+}
+#aboutdescription{
+    
+    padding-top: 20px;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: 20px;
+    border: 10px solid rgb(255, 255, 255);
+    border: 10px solid rgba(0, 0, 0, 0.151);
+    border-right-width: 0;
+    border-left-width: 0;
+    
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 .description{
+    
     color: white;
 }
 .topnavigationbar{
+    
     text-transform: capitalize;
     padding: 0;
     display: flex;
@@ -525,11 +602,13 @@ a:hover, a:active {
     text-align: center;
 }
 .about{
+   
     bottom: 20px;
     padding: 0px 0px 300px 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 .socialmedia{
     display: flex;
@@ -565,11 +644,35 @@ a:hover, a:active {
 }
 .services{
     
-    background: linear-gradient(180deg, #212227, #1d267349, #24252f 100%);
+    
+    /* background-color: linear-gradient(180deg, #15161f, #18161d, #121320 100%); */
     padding: 0px 0px 300px 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+}
+#ux{
+    background-color: rgb(255, 255, 255);
+}
+.skill{
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    
+}
+.skilltitle{
+    
+}
+.goal{
+    padding: 20px;
+   border-style: solid;
+   border-left: none;
+   border-right: none;
+    background-color: #16030300;
+    border-width: 20px;
+    border-color: rgba(0, 0, 0, 0.075);
     position: relative;
 }
 .skillscontainer{
@@ -584,7 +687,7 @@ a:hover, a:active {
     width: 300px;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 .skillscontainer:hover{
     opacity: 1;
@@ -594,9 +697,21 @@ a:hover, a:active {
 }
 #uiuxdesign{
     
+    
+   display: flex;
+   left: 20%;
+    display: flex;
+    width: 200px;
+    position: relative;
     text-align: center;
 }
+
 #musicproduction{
+    left: 20%;
+    
+    display: flex;
+    width: 200px;
+    position: relative;
     text-align: center;
 }
 #mygoal{
@@ -607,7 +722,7 @@ a:hover, a:active {
     margin-right: auto;
 text-align: center;
 position: relative;
-width: 60%;
+width: 80%;
 
 
 }
@@ -639,8 +754,8 @@ width: 60%;
     margin-right: auto;
 text-align: center;
 position: relative;
-width: 62%;
-    background: linear-gradient(180deg, #24262f 0%,#68609a8e 20%, #2b303d, #2e3d6b 100%);
+width: 82%;
+    /* background: linear-gradient(180deg, #121320 0%,#0e0b0b 20%, #2b303d, #2e3d6b 100%); */
    z-index: 0;
     padding: 5px;
     display: flex;
@@ -709,6 +824,7 @@ ul{
     cursor:pointer;
 }
 .hidden {
+    
     height:0px;
        -webkit-transition:height, 0.5s linear;
     -moz-transition: height, 0.5s linear;
@@ -988,7 +1104,7 @@ z-index: 1;
 }
 .contact{
     
-    background:linear-gradient(#2e3d6b 0%,#29314b 50%, #222222 100%);
+    /* background:linear-gradient(#2e3d6b 0%,#29314b 50%, #222222 100%); */
     padding: 0px 0px 300px 0px;
     display: flex;
     flex-direction: row;
@@ -1006,11 +1122,13 @@ z-index: 1;
 .allcontent{
     position: relative;
     top: 100%;
+    background-image: url('./pictures/asphalt.png');
+    background-color: rgba(15, 14, 14, 0.644);
 }
 
 
 .footer{
-    background:#222222;
+    background:#22222200;
     position: relative;
     width: 100%;
     height: 50px;
