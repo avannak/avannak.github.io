@@ -43,9 +43,24 @@ background-color: #261c23;
   
     
 }
+.mainscreen{
+position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.landingtext{
+    height: 100%;
+}
 .allcontent{
     
     /* background: linear-gradient(#0c0d12 0%, #27283b 30%, #1f1f1f 100%); */
+}
+.frontcontent{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    
 }
 .openingpicture{
     padding: 0;
@@ -59,7 +74,7 @@ background-color: #261c23;
     top: 0;
     width: 100%;
     background-size: cover;
-     height: 768px;
+     height: 100vh;
      
     
     
@@ -139,7 +154,7 @@ background-color: #261c23;
     top: 0;
     width: 100%;
     background-size: cover;
-     height: 768px;
+    height: 100vh;
      
      margin: auto;
     
@@ -242,7 +257,7 @@ a:hover, a:active {
 }
 .navbar2{
     padding: 15px;
-   top: 300px;
+   
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.5rem;
@@ -421,7 +436,7 @@ a:hover, a:active {
     animation-duration: 1s;
     
     position: relative;
-    top: 250px;
+    
     padding: 0;
     left: 0;
     font-size: 1em;
@@ -453,7 +468,7 @@ a:hover, a:active {
     
     
     position: relative;
-    top: 280px;
+   
     padding: 0;
     left: 0;
     font-size: 1em;
