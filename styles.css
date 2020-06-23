@@ -78,7 +78,7 @@ text-shadow:2px 2px 2px black;
     animation: arrowanimation 2s infinite;
 }
 #downarrowbutton{
-    position: fixed;
+    position: absolute;
     top: 90vh;
     
     
