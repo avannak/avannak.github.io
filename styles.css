@@ -49,6 +49,107 @@ position: absolute;
     height: 100vh;
     width: 100vw;
 }
+/*to next buttons*/
+#toaboutbutton{
+    position: relative;
+    top: 88vh;
+    
+    background-repeat: no-repeat;
+    
+    z-index: 10;
+    
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+font-size: 2vh;
+margin-left: 0;
+padding: 0;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 2px;
+    border-width: 100px;
+    width: 40vw;
+    padding: 10px;
+text-shadow:2px 2px 2px black;
+    text-decoration: none;
+    color: white;
+    
+    animation: arrowanimation 2s infinite;
+}
+#downarrowbutton{
+    position: fixed;
+    top: 90vh;
+    
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#downarrowbutton span{
+    
+    display: block;
+    width: 4vh;
+    height: 4vh;
+    border-bottom: 6px solid #fff;
+    border-right: 6px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: arrowanimation 2s infinite;
+
+}
+#downarrowbutton span:nth-child(1){
+  
+    animation-delay: 0.2s;
+}
+#downarrowbutton span:nth-child(2){
+    animation-delay: 0.4s;
+    position: relative;
+    bottom: 60px;
+}
+
+@keyframes arrowanimation{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+#arrowdownbar{
+    position: fixed;
+    top: 45vh;
+    height: 500px;
+    background-repeat: no-repeat;
+    
+    left: 44vw;
+    
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+    width: 100px;
+}
+#barhalfstart{
+    transform: rotate(-40deg) translate(75px,0px);
+}
+#bar{
+
+}
+#barhalfend{
+transform: rotate(40deg) translate(-90px,0px);
+
+}
+
+
 .landingtext{
     height: 100%;
 }
@@ -623,9 +724,9 @@ background-position: center;
 #aboutdescription{
     
     padding-top: 20px;
-    padding-right: 40vw;
-    padding-left: 40vw;
-    padding-bottom: 20px;
+   padding-left: 15vw;
+   padding-right: 15vw;
+    padding-bottom:0;
     border: 10px solid rgb(255, 255, 255);
     border: 10px solid rgba(0, 0, 0, 0.151);
     border-right-width: 0;
@@ -671,7 +772,7 @@ background-position: center;
    height: 100vh;
    width: 100vw;
     position: relative;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -682,6 +783,19 @@ background-position: center;
     height: 100vh;
     padding: 10vh 0px 40vh 0px;
    
+}
+#servicescontainer{
+    margin: 0;
+   
+    padding: 10vh 0px 40vh 0px;
+}
+#portfoliocontainer{
+   
+   position: relative;
+    margin: 0;
+    
+   
+    
 }
 .socialmedia{
     display: flex;
@@ -716,6 +830,19 @@ background-position: center;
         padding: 8px;
 }
 .services{
+    padding: 0;
+    height: 200vh;
+    width: 100vw;
+    
+    /* background-color: linear-gradient(180deg, #15161f, #18161d, #121320 100%); */
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.portfolio{
+    padding: 0;
     height: 100vh;
     width: 100vw;
     
@@ -738,8 +865,8 @@ background-position: center;
     
 }
 .goal{
-    padding-right: 40vw;
-    padding-left: 40vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
    
    border-style: solid;
    border-left: none;
@@ -768,6 +895,7 @@ background-position: center;
     opacity: 1;
 }
 .sectionheading{
+
     font-size: 2rem;
 }
 #frontenddeveloper{
@@ -823,21 +951,19 @@ position: relative;
    
 }
 
-.portfolio{
+#portfolio{
+    
     height: 100vh;
-    width: 100vw;
-    
-    /* background-color: linear-gradient(180deg, #15161f, #18161d, #121320 100%); */
-    
+   width: 100vw;
+   
+    position: relative;
+    padding: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: relative;
+    
 }
-.portfolioimg{
-    position: relative;
-    padding: 0;
-}
+
 
 ul{
     
@@ -847,17 +973,11 @@ ul{
 }
 .portfoliolabel{
     font-size: 2rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
+   
    
 }
 .wavyboy{
-    
-    margin: 0;
-    position: relative;
+ 
 }
 #showwavydescription{
     background:none;
@@ -914,89 +1034,53 @@ ul{
 
 
 #showweatherappdescription{
-    background:none;
-    color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+ 
 }
 #weatherappdescription{
-    display: none;
+   
 }
 #showadultingappdescription{
-    background:none;
-    color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  
 }
 #adultingappdescription{
-    display: none;
-    
+  
 }
 #showmusicwebsitedescription{
-    background:none;
-    color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+ 
 }
 #musicwebsitedescription{
-    display: none;
+  
 }
 #showsnakegamedescription{
-    background:none;
-    color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+   
 }
 #snakegamedescription{
-    display: none;
+   
 }
 #showlavalampappdescription{
-    background:none;
-    color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  
 }
 #lavalampappdescription{
-    display: none;
+  
 }
 .weatherapp{
-    position: relative;
-    margin: 0;
+  
    
 }
 .adultingapp{
-    position: relative;
-    margin: 0;
+   
     
 }
 .musicwebsitecontainer{
-    position: relative;
-    margin: 0;
+  
     
 }
 .snakegamecontainer{
-    position: relative;
-    margin: 0;
+   
     
 }
 .lavalampcontainer{
-    position: relative;
-    margin: 0;
+  
    
 }
 #wavyboytitle{
@@ -1151,7 +1235,7 @@ ul{
 }
 #portfolio{
     
-z-index: 1;
+
 }
 #lavalampimg{
     background: url("./gifs/canvas.gif");
@@ -1178,8 +1262,9 @@ z-index: 1;
      transition: 0.8s;
 }
 .contact{
-    position: relative;
-   
+    position: absolute;
+    top: 200%;
+   padding: 0;
     height: 100vh;
     width: 100vw;
     /* background:linear-gradient(#2e3d6b 0%,#29314b 50%, #222222 100%); */
@@ -1207,14 +1292,12 @@ z-index: 1;
 
 .footer{
     background:#22222200;
-    position: relative;
-    width: 100%;
-    height: 50px;
+   
 }
 #footer{
     
-    position: relative;
-    top: 20%;
+    position: absolute;
+    top: 400%;
     display: flex;
     flex-direction: row;
     align-items: center;
