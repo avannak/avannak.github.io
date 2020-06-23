@@ -19,22 +19,25 @@
 
     <header>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <button onclick="topFunction()" id="toTop" title="Go to top">
 
             <img src="./pictures/icons/arrow.svg" />
 
         </button>
 
 
-        <div class="navbar" id="navigationbar">
-
-            <a href="index.html">Home</a>
-            <a class="scrollTo" href="#about">About</a>
-            <a class="scrollTo" href="#services">Services</a>
-            <a class="scrollTo" href="#portfolio">Portfolio</a>
-            <a class="scrollTo" href="#contact">Contact</a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="scrollTo" style="text-decoration: none" href="index.html">Home</a>
+            <a class="scrollTo" style="text-decoration: none" href="#about">About</a>
+            <a class="scrollTo" style="text-decoration: none" href="#services">Services</a>
+            <a class="scrollTo" style="text-decoration: none" href="#portfolio">Portfolio</a>
+            <a class="scrollTo" style="text-decoration: none" href="#contact">Contact</a>
         </div>
-        <div class="menu-toggler">
+
+
+
+        <div class="menu-toggler" onclick="openNav()">
             <div class="bar half start"></div>
             <div class="bar"></div>
             <div class="bar half end"></div>
@@ -47,15 +50,20 @@
 
 
     <div class="mainscreen">
-        <div data-aos="fade-down" data-aos-duration="4000" class="landingtext">
 
-            <div class="openingpicture" id="openingpic">
+        <div data-aos="fade-in" data-aos-duration="4000" class="landingtext">
 
-            </div>
-            <div class="openingpicture2" id="openingpic2">
+            <div data-aos="fade-in" data-aos-duration="4000" class="openingpicture" id="openingpic">
 
             </div>
+            <div data-aos="fade-in" data-aos-duration="4000" class="openingpicture2" id="openingpic2">
 
+            </div>
+            <div data-aos="fade-in" data-aos-duration="4000" style="opacity: .5" class="movingcloud">
+
+
+
+            </div>
             <div class="frontcontent">
                 <div class="title">
                     <h1>Arthur Vannakittikun</h1>
@@ -85,7 +93,7 @@
     <div class="allcontent">
 
         <section class="about" id="about">
-            <div class="container">
+            <div class="container" id="aboutcontainer">
                 <div data-aos="fade-up" data-aos-duration="2000" class="profilesection" id="profile">
 
                     <div data-aos="fade-up" data-aos-duration="2000" class="picture" id="profilepic">
@@ -180,12 +188,13 @@
 
                 <div class="skill">
                     <div class="skilltitle">
-                        <h1 id="uiuxdesign">UI/UX Web Design</h1>
+
 
                         <div class="goal">
+                            <h1 id="frontenddeveloper">Front-End Developer</h1>
                             <p id="mygoal">My goal is to ensure the best user experience. As a passionate Computer
                                 Science student at San Francisco State University, I am all eyes and ears looking for
-                                the best opportunity to grow as a web designer and programmer to the fullest extent of
+                                the best opportunity to grow as a developer to the fullest extent of
                                 my potential and capabilities. I am willing to learn and improve on every component
                                 about what it truly means to be a programmer. </p>
                         </div>
@@ -194,9 +203,10 @@
                 </div>
                 <div class="skill">
                     <div class="skilltitle">
-                        <h1 id="musicproduction">Music Production/Singing</h1>
+
 
                         <div class="goal">
+                            <h1 id="musicproduction">Music Production/Singing</h1>
                             <p id="ihavealways">I have always been primarily influenced by many Pop, Hip-Hop, and R&B
                                 tunes. Whether it be from 1990s contemporary R&B to current generation Hip-Hop, I am
                                 always cultivating new sounds and rediscovering who I am as an artist. Combined with the
