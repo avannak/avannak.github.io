@@ -81,7 +81,7 @@ text-shadow:2px 2px 2px black;
     position: absolute;
     top: 90vh;
     
-    
+    z-index: 10;
     left: 50%;
     transform: translate(-50%, -50%);
 
