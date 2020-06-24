@@ -2,7 +2,7 @@ AOS.init();
 var openingpic = document.getElementById("openingpic");
 var showwavydescbutton = document.getElementById("showwavydescription");
 var wavydesc = document.getElementById("wavydescription");
-
+$('#body').css('min-height', '100%');
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "150px";
