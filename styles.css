@@ -60,9 +60,7 @@ position: absolute;
     
     z-index: 10;
     
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+   
 font-size: 2vh;
 margin-left: 0;
 padding: 0;
@@ -817,26 +815,29 @@ background-position: center;
 }
 
 .servicesbackground{
+    border-top-left-radius: 80px;
     position: absolute;
     z-index: -3;
     height: 100%;
-    width: 100vw;
-    box-shadow: 5px 5px 5px 20px rgba(0, 0, 0, 0.692);
-   
+    width: 50vw;
+    box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.733);
+    display:block;
+    margin:auto;
     
     background: url("./pictures/skyblurry2.jpg");
     
     background-attachment: fixed;
-  background-position: center;
+    background-position: 50% 50%;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #13161c00;
-    background-size: contain;
+    background-size: cover;
     
-    margin: 0;
+   
 }
 #servicescontainer{
     
+    box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
     width: 100vw;
    
    
