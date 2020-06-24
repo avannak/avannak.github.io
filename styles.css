@@ -166,6 +166,11 @@ transform: rotate(40deg) translate(-90px,0px);
     z-index: 3;
     
 }
+.profilesection{
+    position: relative;
+    top: 0;
+    margin:auto;
+}
 .openingpicture{
     box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.692);
     padding: 0;
@@ -796,10 +801,11 @@ background-position: center;
 .about{
     backdrop-filter: blur(2px);
     opacity: .9;
-    
+  
     background-color: rgba(0, 0, 0, 0.247);
    height: 100vh;
    width: 100vw;
+   top: 0;
     position: relative;
     padding: 0;
     display: flex;
@@ -808,9 +814,9 @@ background-position: center;
     
 }
 #aboutcontainer{
-    display: block;
+  
     position: relative;
-    top: 30vh;
+    top:0;
     margin: 0;
     padding: 0;
    
@@ -826,6 +832,7 @@ background-position: center;
     box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.733);
     display:block;
     margin:auto;
+    
     
     background: url("./pictures/skyblurry2.jpg");
     
@@ -856,7 +863,7 @@ background-position: center;
     background-size: cover;
     border-style: double;
     border-width: 1px;
-    margin: 0;
+    margin: auto;
    
     
 }
