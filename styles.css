@@ -170,10 +170,11 @@ transform: rotate(40deg) translate(-90px,0px);
     position: relative;
     top: 0;
     margin:auto;
+    z-index: 0;
 }
 .openingpicture{
     box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.692);
-    padding: 0;
+    padding: 0px 0px 100px 0px;
     background: url("./pictures/artprofile1.jpg");
     display: flex;
     flex-direction: column;
@@ -182,7 +183,7 @@ transform: rotate(40deg) translate(-90px,0px);
     
     display: block;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
      height: 100vh;
      
@@ -255,7 +256,7 @@ transform: rotate(40deg) translate(-90px,0px);
 }
 .openingpicture2{
     box-shadow: 10px 0px 5px 0px  rgba(0, 0, 0, 0.692);
-    padding: 0;
+    padding: 0px 0px 100px 0px;
     background: url("./pictures/artprofile1anim2.jpg");
     display: flex;
     flex-direction: column;
@@ -263,7 +264,7 @@ transform: rotate(40deg) translate(-90px,0px);
     
     display: block;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     height: 100vh;
      
