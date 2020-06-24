@@ -51,6 +51,8 @@ position: absolute;
 }
 /*to next buttons*/
 #toaboutbutton{
+    -moz-appearance: none;
+-webkit-appearance: none;
     border-style: double;
     
     position: relative;
@@ -161,10 +163,11 @@ transform: rotate(40deg) translate(-90px,0px);
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
+    z-index: 3;
     
 }
 .openingpicture{
-    box-shadow: 5px 5px 5px 20px rgba(0, 0, 0, 0.692);
+    box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.692);
     padding: 0;
     background: url("./pictures/artprofile1.jpg");
     display: flex;
@@ -185,7 +188,7 @@ transform: rotate(40deg) translate(-90px,0px);
      background-position: top center;
     
      padding:0;
-     z-index: -1;
+     z-index: 2;
      border-radius: none;
      border-color: rgba(0,0, 0, 0.5);
      opacity: .9;
@@ -246,7 +249,7 @@ transform: rotate(40deg) translate(-90px,0px);
     opacity: 1;
 }
 .openingpicture2{
-    box-shadow: 5px 5px 5px 20px rgba(0, 0, 0, 0.692);
+    box-shadow: 10px 0px 5px 0px  rgba(0, 0, 0, 0.692);
     padding: 0;
     background: url("./pictures/artprofile1anim2.jpg");
     display: flex;
@@ -266,7 +269,7 @@ transform: rotate(40deg) translate(-90px,0px);
      background-position: top center;
     
      padding:0;
-     z-index: -2;
+     z-index: 1;
      border-radius: none;
      border-color: rgba(0,0, 0, 0.5);
      opacity: 1;
@@ -289,7 +292,7 @@ transform: rotate(40deg) translate(-90px,0px);
     height: 100%;
     background: url('./pictures/movingcloud6.png');
     animation: animate 500s linear infinite;
-    z-index: 0;
+    z-index: 2;
 }
 @keyframes animate
 {
@@ -807,7 +810,7 @@ background-position: center;
 #aboutcontainer{
     display: block;
     position: relative;
-    top: 10vh;
+    top: 30vh;
     margin: 0;
     padding: 0;
    
@@ -827,9 +830,9 @@ background-position: center;
     background: url("./pictures/skyblurry2.jpg");
     
     background-attachment: fixed;
-    background-position: 50% 50%;
+   
   background-repeat: no-repeat;
-  background-position: center center;
+ 
   background-color: #13161c00;
     background-size: cover;
     
@@ -846,9 +849,9 @@ background-position: center;
     background: url("./pictures/skyblurry2.jpg");
     
     background-attachment: fixed;
-  background-position: center;
+  
   background-repeat: no-repeat;
-  background-position: center center;
+  
   background-color: #13161c00;
     background-size: cover;
     border-style: double;
