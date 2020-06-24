@@ -858,7 +858,7 @@ background-position: center;
 }
 #portfoliocontainer{
     opacity: .9;
-   
+    backdrop-filter: blur(2px);
    position: relative;
     margin: 0;
     
@@ -945,6 +945,7 @@ background-position: center;
   
   
 .services{
+    backdrop-filter: blur(2px);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     padding: 0;
     height: 200vh;
@@ -1460,7 +1461,8 @@ ul{
 }
 .contact{
     opacity: .9;
-    
+   
+  backdrop-filter: blur(2px);
     position: relative;
    
    padding: 0;
