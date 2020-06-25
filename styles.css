@@ -50,11 +50,13 @@ background-color: #261c23;
     
 }
 .mainscreen{
+    
 position: absolute;
 min-height: 100vh;
 height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
+    
 }
 /*to next buttons*/
 #toaboutbutton{
@@ -196,8 +198,7 @@ transform: rotate(40deg) translate(-90px,0px);
     min-height: 100vh;
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
-     
-    
+   
     
      
      background-repeat: repeat-y;
@@ -206,7 +207,7 @@ transform: rotate(40deg) translate(-90px,0px);
      padding:0;
      z-index: 2;
      border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
+     
      
      transition: 0.8s;
 
@@ -280,10 +281,9 @@ transform: rotate(40deg) translate(-90px,0px);
     min-height: 100vh;
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
-     
-     margin: auto;
     
-     
+     margin: auto;
+   
      background-repeat: repeat-y;
      background-position: top center;
     
@@ -836,23 +836,7 @@ position: relative;
 
 .servicesbackground{
    
-    position: absolute;
-    z-index: -3;
-    height: 100%;
    
-   
-    display:block;
-    margin:auto;
-    
-    
-    background: url("./pictures/skyblurry2.jpg");
-    
-    background-attachment: fixed;
-   
-  background-repeat: no-repeat;
- 
-  background-color: #13161c00;
-    background-size: cover;
     
    
 }
@@ -860,23 +844,30 @@ position: relative;
     
     box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
     width: 100%;
-   
+    backdrop-filter: blur(4);
    
    
     
-    background: url("./pictures/skyblurry2.jpg");
+    background: url("./pictures/skysuperblurry3.jpg");
     
     background-attachment: fixed;
   
   background-repeat: no-repeat;
   
-  background-color: #13161c00;
+  background-color: #000000;
     background-size: cover;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
    
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px double rgba(255, 255, 255, 0.021);
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+   border-top-color: rgba(255, 255, 255, 0.034);
+   border-bottom-color: rgba(255, 255, 255, 0.034);
+   border-right-color: rgba(255, 255, 255, 0.034);
+   border-left-color: rgba(255, 255, 255, 0.021);
+   
    
     
     margin: auto;
@@ -972,7 +963,7 @@ position: relative;
   
   
 .services{
-   
+    backdrop-filter: blur(4);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     padding: 0;
   
@@ -1056,12 +1047,21 @@ position: relative;
    justify-content: center;
     background-color: #ffffff00;
     border-width: 5px;
-    
+    opacity: .98;
     border-color: rgb(0, 0, 0);
     position: relative;
 }
 .skillsborder{
    
+}
+.myskills{
+    opacity: .98;
+}
+#skillscontainer{
+    opacity: .98;
+}
+#skillscontainer:hover{
+    opacity: 1;
 }
 .skillscontainer{
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
@@ -1075,7 +1075,7 @@ position: relative;
     border-left: hidden;
     border-right: hidden;
     
-    opacity: 1;
+    
     width: 50vw;
     display: block;
     margin-left: auto;
@@ -1087,6 +1087,9 @@ position: relative;
 .sectionheading{
 
     font-size: 2rem;
+}
+#frontenddeveloper:hover{
+    opacity: 1;
 }
 #frontenddeveloper{
     font-family: 'Aleo', serif;
@@ -1101,14 +1104,16 @@ position: relative;
    
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
    display: flex;
-   
+   opacity: .95;
    
  
     width: 220px;
     position: relative;
     text-align: center;
 }
-
+#musicproduction:hover{
+    opacity: 1;
+}
 #musicproduction{
     font-family: 'Aleo', serif;
     font-weight: 500;
@@ -1116,7 +1121,7 @@ position: relative;
     background-color: rgb(0, 0, 0);
     border-right-style: dotted;
     border-left-style: dotted;
-    
+    opacity: .95;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
