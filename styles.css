@@ -1523,8 +1523,8 @@ ul{
     overflow-x: hidden;
 }
 .allcontent{
-    position: relative;
-    top: calc(var(--vh, 1vh) * 100);
+    position: absolute;
+    top: 100vh;
     background-image: url('./pictures/asphalt.png');
     background-color: rgba(15, 14, 14, 0.644);
 }
