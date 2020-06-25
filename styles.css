@@ -855,7 +855,7 @@ position: relative;
    
    
     
-    background: url("./pictures/skyblurry13.jpg") no-repeat center center fixed;
+    background: url("./pictures/skyblurry13.jpg");
     
     background-attachment: fixed;
   
