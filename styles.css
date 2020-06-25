@@ -390,8 +390,9 @@ a:hover, a:active {
 }
 /*side bar*/
 .sidenav {
-   
   
+    overflow: auto;
+    height: auto;
     width: 0;
     position: fixed;
     z-index: 3;
@@ -399,7 +400,7 @@ a:hover, a:active {
     left: 0;
     background-color: rgba(17, 17, 17, 0.507);
     overflow-x: hidden;
-   
+   transition: 0.5s;
    
     padding-top: 60px;
   }
@@ -407,7 +408,7 @@ a:hover, a:active {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: calc(1em + 1vw);
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -441,7 +442,7 @@ a:hover, a:active {
    
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 2;
     opacity: .6;
     display: block;
@@ -854,7 +855,7 @@ position: relative;
    
    
     
-    background: url("./pictures/skyblurry11.jpg") no-repeat center center fixed;
+    background: url("./pictures/skyblurry13.jpg") no-repeat center center fixed;
     
     background-attachment: fixed;
   
@@ -867,9 +868,9 @@ position: relative;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
    
-    border: 1px double rgba(255, 255, 255, 0.021);
-    border-top-width: 5px;
-    border-bottom-width: 5px;
+    border: 10px groove rgba(255, 255, 255, 0.021);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
    border-top-color: rgba(255, 255, 255, 0.034);
    border-bottom-color: rgba(255, 255, 255, 0.034);
    border-right-color: rgba(255, 255, 255, 0.034);
@@ -1543,7 +1544,7 @@ ul{
    
    
 }
-html { font-size: 2.2vw; }
+html { font-size: calc(1em + 1vw) }
 h1{
    
     opacity: .9;

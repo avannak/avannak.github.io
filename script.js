@@ -10,12 +10,17 @@ window.addEventListener('resize', function (event) {
   aboutcontainer.style.setProperty('--vh', `${vh}px`);
 });
 
+
+
 var openingpic = document.getElementById("openingpic");
 var showwavydescbutton = document.getElementById("showwavydescription");
 var wavydesc = document.getElementById("wavydescription");
+
+
 $('#body').css('min-height', '100%');
 
 function openNav() {
+
   document.getElementById("mySidenav").style.width = "fit-content";
 
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -117,3 +122,4 @@ var docWidth = document.documentElement.offsetWidth;
     }
   }
 );
+
