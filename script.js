@@ -1,10 +1,13 @@
 AOS.init();
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
+var aboutcontainer = document.getElementById("aboutcontainer");
+
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-$(window).resize(function () {
+window.addEventListener('resize', function (event) {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
+  aboutcontainer.style.setProperty('--vh', `${vh}px`);
 });
 
 var openingpic = document.getElementById("openingpic");
@@ -103,3 +106,14 @@ function showDivs(n) {
   }
 
 }
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function (el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);

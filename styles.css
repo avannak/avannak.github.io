@@ -22,7 +22,9 @@ html{
    
 }
 body{
-    
+    min-height: 100vh;
+    padding: 0;
+   
     margin: auto;
     height: 100%;
     overflow-x: hidden;
@@ -194,6 +196,7 @@ transform: rotate(40deg) translate(-90px,0px);
     display: block;
     top: 0;
     width: 100vw;
+   
     background-size: cover;
     min-height: 100vh;
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
@@ -201,7 +204,7 @@ transform: rotate(40deg) translate(-90px,0px);
    
     
      
-     background-repeat: repeat-y;
+     background-repeat: no-repeat;
      background-position: top center;
     
      padding:0;
@@ -277,14 +280,16 @@ transform: rotate(40deg) translate(-90px,0px);
     display: block;
     top: 0;
     width: 100vw;
+   
     background-size: cover;
+
     min-height: 100vh;
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
     
      margin: auto;
    
-     background-repeat: repeat-y;
+     background-repeat: no-repeat;
      background-position: top center;
     
      padding:0;
@@ -402,7 +407,7 @@ a:hover, a:active {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2vw;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -761,7 +766,7 @@ position: relative;
 }
 
 #aboutdescription{
-    
+    word-break: break-all;
     padding-top: 20px;
    padding-left: 15vw;
    padding-right: 15vw;
@@ -773,7 +778,7 @@ position: relative;
   
 }
 .description{
-    
+    word-break: break-all;
     color: white;
 }
 .topnavigationbar{
@@ -806,6 +811,7 @@ position: relative;
     text-align: center;
 }
 .alittleaboutmyself{
+    word-break: break-all;
     letter-spacing: 10px;
 }
 .about{
@@ -816,7 +822,7 @@ position: relative;
   
    
     
-    background-color: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
     
    width: 100vw;
    top: 0;
@@ -831,16 +837,17 @@ position: relative;
     align-items: center;
 }
 #aboutcontainer{
-  
+    background-color: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
+
     
    
 }
 
 
 #servicescontainer{
-    
+    overflow-x: hidden;
     box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
-    width: 100%;
+    width: 100vw;
     
      /* Fallback for browsers that do not support Custom Properties */
    
@@ -1026,12 +1033,14 @@ position: relative;
     }
   }
 .color-change-2x {
+    
 	-webkit-animation: color-change-2x 2s linear infinite alternate both;
 	        animation: color-change-2x 2s linear infinite alternate both;
 }
 .border{
+    overflow-x: hidden;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 2px;
     position: relative;
     left: 0;
@@ -1092,8 +1101,8 @@ position: relative;
     opacity: 1;
 }
 .sectionheading{
-
-    font-size: 2rem;
+font-size: 1.8rem;
+   padding: 0;
 }
 #frontenddeveloper:hover{
     opacity: 1;
@@ -1108,13 +1117,14 @@ position: relative;
     background-color: rgb(0, 0, 0);
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
-   
+    word-break: break-all;
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
    display: flex;
    opacity: .95;
-   
- 
-    width: 220px;
+   word-wrap: break-word;
+   display: inline-block;
+   padding: 10px;
+    height: 100%;
     position: relative;
     text-align: center;
 }
@@ -1132,8 +1142,11 @@ position: relative;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
-    display: flex;
-    width: 220px;
+    display: inline-block;
+    padding: 10px;
+    height: 100%;
+    
+    word-break: break-all;
     position: relative;
     text-align: center;
 }
@@ -1478,35 +1491,38 @@ ul{
      transition: 0.8s;
 }
 .contact{
-    opacity: .9;
+    min-height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  
+  
    
-  
-    position: relative;
-    top: calc(var(--vh, 1vh) * 200);
-  
-   padding: 0;
-   min-height: 100vh;
-   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-   height: calc(var(--vh, 1vh) * 100);
-    width: 100vw;
-    /* background:linear-gradient(#2e3d6b 0%,#29314b 50%, #222222 100%); */
     
+    background-color: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
+    
+   width: 100vw;
+   
+    position: relative;
+    margin: auto;
+   
+    padding-bottom: 100px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
    
 }
 .contactform{
     padding: 100px;
 }
 .container{
-    
+    overflow: hidden;
+    overflow-x: hidden;
 }
 .allcontent{
     position: relative;
-    top: 100%;
+    top: calc(var(--vh, 1vh) * 100);
     background-image: url('./pictures/asphalt.png');
     background-color: rgba(15, 14, 14, 0.644);
 }
@@ -1518,22 +1534,27 @@ ul{
 }
 #footer{
     
+    top: 100%;
     position: relative;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    float: left;
    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+   
 }
+html { font-size: 2vw; }
 h1{
+    
     opacity: .9;
     transition: .5s;
 }
 h1:hover{
+    overflow-x: hidden;
     opacity: 1;
 }
 h6{
+    word-break: break-all;
+    overflow-x: hidden;
     opacity: .8;
     transition: .5s;
 }
@@ -1541,6 +1562,7 @@ h6:hover{
     opacity: 1;
 }
 label{
+    word-break: break-all;
     opacity: .8;
     transition: .5s;
 }
@@ -1548,7 +1570,7 @@ label:hover{
     opacity: 1;
 }
 p{
-   
+    
     opacity: .9;
     transition: .5s;
 }
@@ -1556,6 +1578,7 @@ p:hover{
     opacity: 1;
 }
 h2{
+    
     opacity: .8;
     transition: .5s;
 }
@@ -1563,7 +1586,7 @@ h2:hover{
     opacity: 1;
 }
 input{
-    padding: 10px;
+    
 
 }
 @media screen and (min-width: 601px) {
