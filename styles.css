@@ -1117,7 +1117,7 @@ font-size: 1.8rem;
     background-color: rgb(0, 0, 0);
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
-    word-break: break-all;
+   
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
    display: flex;
    opacity: .95;
@@ -1145,10 +1145,11 @@ font-size: 1.8rem;
     display: inline-block;
     padding: 10px;
     height: 100%;
-    
-    word-break: break-all;
+    text-overflow: clip;
+    word-wrap: break-word;
+   
     position: relative;
-    text-align: center;
+    text-align:center;
 }
 #mygoal{
     
