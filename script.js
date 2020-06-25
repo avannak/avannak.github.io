@@ -3,9 +3,6 @@ AOS.init();
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-$(window).resize(function () {
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
 window.onresize = function () { location.reload(); }
 var openingpic = document.getElementById("openingpic");
 var showwavydescbutton = document.getElementById("showwavydescription");
