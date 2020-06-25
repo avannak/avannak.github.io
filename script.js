@@ -16,7 +16,7 @@ var wavydesc = document.getElementById("wavydescription");
 $('#body').css('min-height', '100%');
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "150px";
+  document.getElementById("mySidenav").style.width = "fit-content";
 
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   $('.menu-toggler').hide();

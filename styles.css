@@ -407,7 +407,7 @@ a:hover, a:active {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 3vw;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -755,7 +755,7 @@ z-index: 3;
  
  
    font-size: 1.2rem;
-   word-wrap: break-word;
+  
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -811,7 +811,7 @@ position: relative;
     text-align: center;
 }
 .alittleaboutmyself{
-    word-break: break-all;
+    
     letter-spacing: 10px;
 }
 .about{
@@ -1542,9 +1542,9 @@ ul{
    
    
 }
-html { font-size: 2vw; }
+html { font-size: 2.2vw; }
 h1{
-    
+   
     opacity: .9;
     transition: .5s;
 }
