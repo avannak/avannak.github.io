@@ -400,7 +400,7 @@ a:hover, a:active {
     left: 0;
     background-color: rgba(17, 17, 17, 0.507);
     overflow-x: hidden;
-   transition: 0.5s;
+ 
    
     padding-top: 60px;
   }
