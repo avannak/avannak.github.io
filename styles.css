@@ -1546,7 +1546,11 @@ ul{
 }
 html { font-size: calc(1em + 1vw) }
 h1{
-   
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+   font-weight: 1000;
+   font: outline;
     opacity: .9;
     transition: .5s;
 }
