@@ -1018,6 +1018,8 @@ position: relative;
      
  }
  .portfolioimg{
+   
+     background-color: rgba(110, 110, 110, 0.199);
      padding: 50px;
      -moz-box-sizing: border-box; 
      box-sizing: border-box;
@@ -1026,7 +1028,7 @@ position: relative;
      width:  50vw;
      height: 45vh;
      object-fit: contain;
-     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.534);
+     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.233);
  }
  .portfolioimg:hover{
      -webkit-animation: swing 1s ease;
