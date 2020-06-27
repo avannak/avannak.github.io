@@ -1,8 +1,12 @@
 AOS.init();
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 var aboutcontainer = document.getElementById("aboutcontainer");
-
+var sidenav = document.getElementById("mySidenav");
 
 
 
@@ -15,7 +19,8 @@ var wavydesc = document.getElementById("wavydescription");
 
 function openNav() {
 
-  document.getElementById("mySidenav").style.width = "fit-content";
+  document.getElementById("mySidenav").style.width = "35vmin";
+  document.getElementById("mySidenav").style.height = "fit-content";
 
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   $('.menu-toggler').hide();
@@ -27,6 +32,13 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
   $('.menu-toggler').show();
 }
+sidenav.addEventListener("mouseleave", function () {
+  document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.0)"
+});
+
+sidenav.addEventListener("mouseenter", function () {
+  document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.4)"
+});
 
 $(document).ready(function () {
   $('#view_details').on('click', function () {

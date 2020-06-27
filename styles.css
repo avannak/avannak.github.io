@@ -1,4 +1,6 @@
 
+@import url(//db.onlinewebfonts.com/c/eaf39a6323f4ff98195bc75bab7ac028?family=WavyRoundedBTW01-Regular);
+@font-face {font-family: "WavyRoundedBTW01-Regular"; src: url("//db.onlinewebfonts.com/t/eaf39a6323f4ff98195bc75bab7ac028.eot"); src: url("//db.onlinewebfonts.com/t/eaf39a6323f4ff98195bc75bab7ac028.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/eaf39a6323f4ff98195bc75bab7ac028.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/eaf39a6323f4ff98195bc75bab7ac028.woff") format("woff"), url("//db.onlinewebfonts.com/t/eaf39a6323f4ff98195bc75bab7ac028.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/eaf39a6323f4ff98195bc75bab7ac028.svg#WavyRoundedBTW01-Regular") format("svg"); }
 html { font-size: calc(1em + 1vw);
     Min-height: 100vh;
     Min-width: 100vw; }
@@ -31,7 +33,7 @@ background-color: #261c23;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
    color: white;
-   text-shadow: 2px 2px 3px rgba(0,0, 0, 0.5);
+   text-shadow: 2px 2px 3px rgb(0, 0, 0);
   
     
 }
@@ -308,7 +310,7 @@ transform: rotate(40deg) translate(-90px,0px);
 
 .movingcloud{
     
-    opacity: .5;
+    opacity: .9;
     
     background-size: 100% 100%;
     padding: 0;
@@ -328,7 +330,7 @@ transform: rotate(40deg) translate(-90px,0px);
 {
     0%
     {
-        background-position: 500px;
+        background-position: 4000px;
     }
     100%
     {
@@ -394,7 +396,8 @@ a:hover, a:active {
 }
 /*side bar*/
 .sidenav {
-  
+    
+  border-radius: 4px;
     overflow: auto;
     height: auto;
     width: 0;
@@ -404,7 +407,7 @@ a:hover, a:active {
     left: 0;
     background-color: rgba(17, 17, 17, 0.507);
     overflow-x: hidden;
- 
+ transition: 0.5s;
    
     padding-top: 60px;
   }
@@ -858,15 +861,19 @@ position: relative;
     top: 10vh;
 }
 .servicesbox{
-    position: relative;
+    background-color: rgba(28, 43, 49, 0.582);
+    position: absolute;
+    height: 100%;
+    width: 100vw;
     top: 0;
-    margin: auto;
-    backdrop-filter: blur(20px);
+    margin: 0;
+   
   
 }
 
 #servicescontainer{
-    background: linear-gradient(#1a1c2456, #171a4100);
+    top: 0;
+    background-color: rgba(28, 43, 49, 0.582);
     overflow-x: hidden;
     overflow-y: hidden;
     box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
@@ -892,54 +899,16 @@ position: relative;
   
  
    
-    position: relative;
+    position: absolute;
     margin: auto;
    
     
 }
-#portfoliocontainer{
-    
-  
-   position: relative;
-    margin: 0;
-   
-    
-   
-    
-}
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 0;
-}
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 .socialmedia{
     display: flex;
     flex-direction: row;
@@ -1020,7 +989,7 @@ position: relative;
   
   
 .services{
-    
+    background-color: rgba(28, 43, 49, 0.582);
   top: 45vh;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     padding: 0;
@@ -1036,15 +1005,42 @@ position: relative;
 
     
 }
-
+#portfoliocontainer{
+    
+  
+    position: relative;
+     margin: 0;
+    
+     
+    
+     
+ }
+ .portfolioimg{
+     padding: 50px;
+     -moz-box-sizing: border-box; 
+     box-sizing: border-box;
+     float: left;
+     border-radius: 50px;
+     width:  50vw;
+     height: 45vh;
+     object-fit: contain;
+     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.432);
+ }
+ .portfolioimg:hover{
+     -webkit-animation: swing 1s ease;
+     animation: swing 1s ease;
+     -webkit-animation-iteration-count: 1;
+     animation-iteration-count: 1;
+ }
+ 
 .portfolio{
    
-    backdrop-filter: blur(20px);
+   
     padding: 0;
     min-height: 100vh;
    
     width: 100vw;
-    background: linear-gradient(#1a1c2456, #171a4100);
+   
     /* background-color: linear-gradient(180deg, #15161f, #18161d, #121320 100%); */
     
     display: flex;
@@ -1052,10 +1048,280 @@ position: relative;
     text-align: center;
     position: relative;
 }
+/* Create four equal columns that floats next to each other */
+.column {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+  
+    
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: none;
+  padding: 0;
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+#wavyboytitle{
+    font-size: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: "WavyRoundedBTW01-Regular";
+    
+}
+#wavyboyimg{
+    background: url("./pictures/wavyboy.png");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-size: contain;
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
+}
+#weathertitle{
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+}
+#weatherappimg{
+    background: url("./pictures/weatherapp.png");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-size: contain;
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
+}
+#adultingtitle{
+    font-size: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    
+}
+#adultingappimg{
+    background: url("./pictures/adulting.png");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+     background-size: contain;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
+}
+#musicwebsitetitle{
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    font-weight: thin;
+}
+#musicwebsiteimg{
+    background: url("./pictures/musicplayer.png");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+     background-size: contain;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
+}
+#snakegametitle{
+    font-size: 24px;
+    font-family: 'Londrina Sketch', cursive;
+}
+#snakegameimg{
+    background: url("./gifs/snake.gif");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-size: contain;
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
+}
+#lavatitle{
+    font-size: 24px;
+    font-family: 'Flavors', cursive;
+}
+
+#lavalampimg{
+    background: url("./gifs/canvas.gif");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-size: contain;
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
+}
 #ux{
     background-color: rgb(255, 255, 255);
 }
 .skill{
+    
     font-family: 'Aleo', serif;
     font-weight: 1000;
     position: relative;
@@ -1125,7 +1391,7 @@ position: relative;
     min-height: 100%;
 }
 #skillscontainer{
-    
+    border-radius: 5px;
     opacity: .98;
 }
 #skillscontainer:hover{
@@ -1139,7 +1405,7 @@ position: relative;
     position: relative;
     background-color: rgb(0, 0, 0);
     border-style: double;
-    border-radius: 0px;
+    border-radius: 5px;
     border-width: 10px;
     border-left: hidden;
     border-right: hidden;
@@ -1154,6 +1420,7 @@ position: relative;
     opacity: 1;
 }
 .sectionheading{
+    
 font-size: 1.8rem;
    padding: 0;
 }
@@ -1172,6 +1439,7 @@ font-size: 1.8rem;
     border-right-color: rgb(255, 255, 255);
    
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 5px;
    display: flex;
    opacity: .95;
    word-wrap: break-word;
@@ -1195,8 +1463,9 @@ font-size: 1.8rem;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 5px;
     display: inline-block;
-    padding:0;
+    padding:10px;
     height: 100%;
     text-overflow: clip;
     word-wrap: break-word;
@@ -1227,7 +1496,7 @@ position: relative;
 
 }
 #ihavealways{
-  padding:0;
+  padding:10px;
    
     border-style: double;
     border-width: 2px;
@@ -1366,194 +1635,12 @@ ul{
   
    
 }
-#wavyboytitle{
-    font-size: 24px;
-    text-align: center;
-    overflow-wrap: break-word;
-    
-}
-#wavyboyimg{
-    background: url("./pictures/wavyboy.png");
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-size: contain;
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: center center;
-    
-     padding:0;
-     z-index: -1;
-     border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
-     opacity: .9;
-     transition: 0.8s;
-}
-#weathertitle{
-    font-size: 24px;
-    font-family: 'Abril Fatface', cursive;
-}
-#weatherappimg{
-    background: url("./pictures/weatherapp.png");
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-size: contain;
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: center center;
-    
-     padding:0;
-     z-index: -1;
-     border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
-     opacity: .9;
-     transition: 0.8s;
-}
-#adultingtitle{
-    font-size: 24px;
-    text-align: center;
-    overflow-wrap: break-word;
-    
-}
-#adultingappimg{
-    background: url("./pictures/adulting.png");
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: center center;
-     background-size: contain;
-    
-     padding:0;
-     z-index: -1;
-     border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
-     opacity: .9;
-     transition: 0.8s;
-}
-#musicwebsitetitle{
-    font-size: 24px;
-    font-family: 'Bellefair', serif;
-}
-#musicwebsiteimg{
-    background: url("./pictures/musicplayer.png");
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: center center;
-     background-size: contain;
-    
-     padding:0;
-     z-index: -1;
-     border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
-     opacity: .9;
-     transition: 0.8s;
-}
-#snakegametitle{
-    font-size: 24px;
-    font-family: 'Londrina Sketch', cursive;
-}
-#snakegameimg{
-    background: url("./gifs/snake.gif");
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-size: contain;
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: center center;
-    
-     padding:0;
-     z-index: -1;
-     border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
-     opacity: .9;
-     transition: 0.8s;
-}
-#lavatitle{
-    font-size: 24px;
-    font-family: 'Flavors', cursive;
-}
-#portfolio{
-    
 
-}
-#lavalampimg{
-    background: url("./gifs/canvas.gif");
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-size: contain;
-     height: 300px;
-     min-height:100%;
-    
-     
-     background-repeat:no-repeat;
-     background-position: center center;
-    
-     padding:0;
-     z-index: -1;
-     border-radius: none;
-     border-color: rgba(0,0, 0, 0.5);
-     opacity: .9;
-     transition: 0.8s;
-}
 .contact{
     min-height: 100vh;
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
-  
-  
-   
-    
-    background-color: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
-    
+ 
    width: 100vw;
    
     position: relative;
@@ -1576,6 +1663,62 @@ ul{
 .container{
    
 }
+
+
+@-webkit-keyframes hvr-back-pulse {
+    50% {
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+  @keyframes hvr-back-pulse {
+    50% {
+      background-color: rgba(34, 34, 34, 0.308);
+    }
+  }
+  #resumetext{
+      
+    font-family: 'Nanum Myeongjo', serif;
+      font-weight: thin;
+      
+      text-shadow: 2px 2px 2px black;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      
+  }
+  #downloadresume{
+      border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 15px;
+   
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.664), 0.164);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  #downloadresume:hover, #downloadresume:focus, #downloadresume:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: rgba(0, 0, 0, 0.473);
+    background-color: #55b2ff52;
+    color: rgb(255, 255, 255);
+  }
 .allcontent{
     position: absolute;
     top: 100vh;
@@ -1608,6 +1751,7 @@ h1{
    font: outline;
     opacity: .9;
     transition: .5s;
+    text-shadow: 2px 2px 1px black;
 }
 h1:hover{
     overflow-x: hidden;
@@ -1631,7 +1775,7 @@ label:hover{
     opacity: 1;
 }
 p{
-    
+    padding: 15px;
     opacity: .9;
     transition: .5s;
 }
@@ -1655,7 +1799,7 @@ input{
 }
 @media screen and (min-width: 601px) {
     div.example {
-      font-size: 80px;
+      font-size: 40px;
     }
   }
   
