@@ -893,7 +893,9 @@ position: relative;
   background-repeat: no-repeat;
   
   
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    
 
     
   
@@ -1024,7 +1026,7 @@ position: relative;
      width:  50vw;
      height: 45vh;
      object-fit: contain;
-     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.432);
+     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.534);
  }
  .portfolioimg:hover{
      -webkit-animation: swing 1s ease;
@@ -1367,7 +1369,7 @@ position: relative;
 .goal{
     padding-right: 20vw;
     padding-left: 20vw;
-  
+    padding-top: 0;
    border-style: solid;
    border-top: none;
    border-left: hidden;
@@ -1445,9 +1447,10 @@ font-size: 1.8rem;
    word-wrap: break-word;
    display: inline-block;
    padding: 10px;
-    height: 100%;
+    height: fit-content;
     position: relative;
     text-align: center;
+    top: 30px;
 }
 #musicproduction:hover{
     opacity: 1;
@@ -1466,12 +1469,13 @@ font-size: 1.8rem;
     border-radius: 5px;
     display: inline-block;
     padding:10px;
-    height: 100%;
+    height: fit-content;
     text-overflow: clip;
     word-wrap: break-word;
    
     position: relative;
     text-align:center;
+    top: 30px;
 }
 #mygoal{
     
@@ -1654,6 +1658,14 @@ ul{
     align-items: center;
    z-index: 5;
 }
+#downloadsvg{
+    padding: 5px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.281);
+    border-radius: 35%;
+    border-color: rgba(0, 0, 0, 0);
+  
+   
+}
 #contact{
     
 }
@@ -1676,18 +1688,23 @@ ul{
     }
   }
   #resumetext{
-      
+   
     font-family: 'Nanum Myeongjo', serif;
       font-weight: thin;
       
       text-shadow: 2px 2px 2px black;
+     
       display: flex;
       justify-content: center;
       padding: 10px;
       
+      
   }
   #downloadresume{
-      border-radius: 150px;
+    border-style: double;
+    background-color: rgba(0, 0, 0, 0.836);
+      border-radius: 8px;
+      border-width: 10px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -1696,7 +1713,7 @@ ul{
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
     background-color: rgba(255, 255, 255, 0.664), 0.164);
     overflow: hidden;
     -webkit-transition-duration: 0.5s;
@@ -1733,7 +1750,7 @@ ul{
 }
 #footer{
     
-    
+    padding: 10px;
     position: relative;
     overflow: hidden;
     overflow-wrap: break-word;
@@ -1792,6 +1809,9 @@ h2:hover{
 }
 h3{
     
+}
+.skillspan{
+    padding: 0px;
 }
 input{
     
