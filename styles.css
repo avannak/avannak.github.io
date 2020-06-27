@@ -1,28 +1,12 @@
-.texture {
-    min-height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url('./pictures/rocky-wall.png');
-  }
-.rockybackground{
-    z-index: 1;
-    min-height: 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-   
-}
-html{
-   
-}
+
+html { font-size: calc(1em + 1vw);
+    Min-height: 100vh;
+    Min-width: 100vw; }
+
 body{
-    min-height: 100vh;
+    Min-height: 100vh;
+Min-width: 100vw;
+   
     padding: 0;
    
     margin: auto;
@@ -50,6 +34,26 @@ background-color: #261c23;
    text-shadow: 2px 2px 3px rgba(0,0, 0, 0.5);
   
     
+}
+.texture {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./pictures/rocky-wall.png');
+  }
+.rockybackground{
+    z-index: 1;
+    min-height: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+   
 }
 .mainscreen{
     
@@ -184,7 +188,7 @@ transform: rotate(40deg) translate(-90px,0px);
     z-index: 0;
 }
 .openingpicture{
-    box-shadow: 10px 0px 5px 15px rgba(0, 0, 0, 0.692);
+    box-shadow: 2px 0px 2px 5px rgba(0, 0, 0, 0.692);
     padding: 0;
     
     background: url("./pictures/artprofile1.jpg");
@@ -269,7 +273,7 @@ transform: rotate(40deg) translate(-90px,0px);
     opacity: 1;
 }
 .openingpicture2{
-    box-shadow: 10px 0px 5px 15px  rgba(0, 0, 0, 0.692);
+    box-shadow: 2px 0px 2px 5px  rgba(0, 0, 0, 0.692);
     padding: 0;
     
     background: url("./pictures/artprofile1anim2.jpg");
@@ -669,7 +673,7 @@ a:hover, a:active {
     text-align: center;
     top:0;
     background: url("./pictures/art73.jpeg");
-    
+    padding: 0;
     position: relative;
     background-position: center center;
     width: 200px;
@@ -816,80 +820,125 @@ position: relative;
     letter-spacing: 10px;
 }
 .about{
-    min-height: 100vh;
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-  
+   
   
    
     
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%); */
+   
     
+  
    width: 100vw;
    top: 0;
     position: relative;
     margin: auto;
    
-    padding-bottom: 100px;
+    
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
+#aboutbox{
+    height: fit-content;
+}
 #aboutcontainer{
-    background-color: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%);
+  height: fit-content;
+  
+    /* background-color: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(13,14,18,1) 100%, rgb(0, 0, 0) 100%); */
+position: relative;
 
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+#aboutcontents{
     
-   
+    position: relative;
+    top: 10vh;
+}
+.servicesbox{
+    position: relative;
+    top: 0;
+    margin: auto;
+    backdrop-filter: blur(20px);
+  
 }
 
-
 #servicescontainer{
+    background: linear-gradient(#1a1c2456, #171a4100);
     overflow-x: hidden;
+    overflow-y: hidden;
     box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
     width: 100vw;
-    
+  height: fit-content;
+    padding: 0;
      /* Fallback for browsers that do not support Custom Properties */
    
    
    
     
-    background: url("./pictures/skyblurry14.jpg");
+    background: url("./pictures/sunset2.jpg");
+    
     
     background-attachment: fixed;
   
   background-repeat: no-repeat;
   
-  background-color: #000000;
+  
     background-size: cover;
+
     
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  
+ 
    
-    border: 10px groove rgba(255, 255, 255, 0.021);
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-   border-top-color: rgba(255, 255, 255, 0.034);
-   border-bottom-color: rgba(255, 255, 255, 0.034);
-   border-right-color: rgba(255, 255, 255, 0.034);
-   border-left-color: rgba(255, 255, 255, 0.021);
-   
-   
-    position: absolute;
+    position: relative;
     margin: auto;
    
     
 }
 #portfoliocontainer{
-    opacity: .9;
+    
   
    position: relative;
     margin: 0;
+   
     
    
     
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 0;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 .socialmedia{
     display: flex;
@@ -971,12 +1020,12 @@ position: relative;
   
   
 .services{
-   
+    
+  top: 45vh;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     padding: 0;
-    min-height: 100%;
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: 100vh;
+    
     width: 100vw;
     
     background: linear-gradient(#121317bd, rgba(255, 255, 255, 0));  
@@ -984,13 +1033,16 @@ position: relative;
     flex-direction: column;
     text-align: center;
     position: relative;
+
+    
 }
 
 .portfolio{
+   
+    backdrop-filter: blur(20px);
     padding: 0;
     min-height: 100vh;
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+   
     width: 100vw;
     background: linear-gradient(#1a1c2456, #171a4100);
     /* background-color: linear-gradient(180deg, #15161f, #18161d, #121320 100%); */
@@ -1069,7 +1121,7 @@ position: relative;
 .myskills{
     
    
-    opacity: .98;
+    
     min-height: 100%;
 }
 #skillscontainer{
@@ -1208,8 +1260,7 @@ position: relative;
 
 #portfolio{
     min-height: 100vh;
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+  
    width: 100vw;
    
     position: relative;
@@ -1508,20 +1559,22 @@ ul{
     position: relative;
     margin: auto;
    
-    padding-bottom: 100px;
+    
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-   
+   z-index: 5;
+}
+#contact{
+    
 }
 .contactform{
     padding: 100px;
 }
 .container{
-    overflow: hidden;
-    overflow-x: hidden;
+   
 }
 .allcontent{
     position: absolute;
@@ -1537,7 +1590,7 @@ ul{
 }
 #footer{
     
-    top: 100%;
+    
     position: relative;
     overflow: hidden;
     overflow-wrap: break-word;
@@ -1545,7 +1598,8 @@ ul{
    
    
 }
-html { font-size: calc(1em + 1vw) }
+
+
 h1{
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
@@ -1591,6 +1645,9 @@ h2{
 }
 h2:hover{
     opacity: 1;
+}
+h3{
+    
 }
 input{
     
