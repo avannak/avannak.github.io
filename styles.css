@@ -1425,7 +1425,7 @@ position: relative;
     
     border-style: solid;
     border-radius: 30px;
-    border-width: 5px;
+    border-width: 2px;
     background-color: rgba(0, 0, 0, 0.685);
     
     -webkit-animation: color-change-black 2s ease-in-out infinite alternate both;
