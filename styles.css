@@ -129,6 +129,7 @@ padding: 0;
     bottom: 60px;
 }
 
+
 @keyframes arrowanimation{
     0%
     {
@@ -337,8 +338,57 @@ transform: rotate(40deg) translate(-90px,0px);
         background-position: 5440px;
     }
 }
+#uparrowbutton{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+        border-style: double;
+        bottom: 0;
+        top: 0;
+        left: 50px;
+        position: absolute;
+       
+      
+        background-repeat: no-repeat;
+        
+        z-index: 10;
+        
+       
+    font-size: 2vh;
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.932);
+        border-radius: 2px;
+        border-width: 5px;
+     
+     
+        transform: rotate(90deg);
+      
+        padding: 1vh;
+        text-shadow:2px 2px 2px black;
+        text-decoration: none;
+        color: white;
+        animation: arrowanimation 4s infinite;
+        
 
+}
+#uparrowbutton span{
+    box-shadow: 5px 5px 5px black;
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    border-bottom: 6px solid #fff;
+    border-right: 6px solid #fff;
+    
+    margin: -10px;
+    animation: arrowanimation 2s infinite;
+
+}
 #toTop {
+    
     transform: rotate(270deg);
     background-image: url("./pictures/icons/arrow.svg");
     background-image: url("./pictures/icons/arrow.svg"), none;
