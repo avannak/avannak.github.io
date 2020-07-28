@@ -615,12 +615,15 @@ a:hover, a:active {
     right: 1rem;
     width: 3rem;
     height: 3rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
     z-index: 1500;
     transition: 605ms ease-out;
+}
+.hidden{
+    display: none;
 }
 .menu-toggler:hover{
     opacity: 1;
@@ -1368,6 +1371,23 @@ position: relative;
      border-color: rgba(0,0, 0, 0.5);
      opacity: .9;
      transition: 0.8s;
+}
+.modal{
+    position: fixed;
+    
+    height: 100%;
+    width: 100%;
+    display: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.modalcontents{
+    background-color: #fff;
+    padding: 2rem 4rem;
+    display: none;
+    z-index: 100;
+
 }
 #ux{
     background-color: rgb(255, 255, 255);

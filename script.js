@@ -13,12 +13,13 @@ var sidenav = document.getElementById("mySidenav");
 var openingpic = document.getElementById("openingpic");
 var showwavydescbutton = document.getElementById("showwavydescription");
 var wavydesc = document.getElementById("wavydescription");
-
+var navisopen = false;
 
 
 
 function openNav() {
-
+  navisopen = true;
+  console.log("navisopen is " + navisopen);
   document.getElementById("mySidenav").style.width = "35vmin";
   document.getElementById("mySidenav").style.height = "fit-content";
 
@@ -27,6 +28,8 @@ function openNav() {
 }
 
 function closeNav() {
+  navisopen = false;
+  console.log("navisopen is " + navisopen);
   document.getElementById("mySidenav").style.width = "0";
 
   document.body.style.backgroundColor = "white";
@@ -46,6 +49,13 @@ $(document).ready(function () {
 
   });
 });
+$("#wavyboy").click(function () {
+  $(".modalcontents").toggle();
+
+});
+
+
+
 $("#showadultingappdescription").click(function () {
   $("#adultingappdescription").toggle();
 });
@@ -73,15 +83,24 @@ $("#showlavalampappdescription").click(function () {
 
 //Get the button:
 mybutton = document.getElementById("toTop");
-
+menutoggler = document.getElementById("menutoggler");
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollFunction(), menutogglerscrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     $("#toTop").fadeOut();
+  }
+}
+function menutogglerscrollFunction() {
+  if (!navisopen && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    menutoggler.style.display = "flex";
+
+
+  } else {
+    $("#menutoggler").fadeOut();
   }
 }
 
