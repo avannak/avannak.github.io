@@ -1527,7 +1527,7 @@ transform: translate(-50%, -50%) scale(1);
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.795);
     z-index: 1;
     pointer-events: none;
 }
