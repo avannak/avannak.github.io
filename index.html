@@ -63,7 +63,41 @@
             <a class="scrollTo" style="text-decoration: none" href="#portfolio">Portfolio</a>
             <a class="scrollTo" style="text-decoration: none" href="#contact">Contact</a>
         </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title" id="wavyboytitle">【wavyboy】synthesizer</div>
+                <button data-close-button class="close-button">&times;</button>
 
+            </div>
+
+            <img src="./pictures/wavyboy.png" style="width:100%">
+            <div class="websitelinks">
+                <a class="applinks" id="githublink" href="https://github.com/avannak/Synthesizer.git" class="iconlink">
+                    <button class="linkbuttons"> <img src="pictures/icons/github2.svg" height="24" width="24"
+                            id="githubicon">
+                        GitHub Code
+                    </button>
+
+                </a>
+                <a class="applinks" id="livewebsitelink" href="https://wavyboy.herokuapp.com/" class="iconlink">
+                    <button class="linkbuttons"> <img src="pictures/icons/play.svg" height="24" width="24"
+                            id="githubicon">
+                        Live Website
+                    </button>
+
+                </a>
+            </div>
+
+            <div class="modal-body">Every music producer should know how a synthesizer works. So
+                to elevate my
+                own
+                understanding, I decided to build one myself. With the Tone.js framework, I designed and
+                constructed my own.【wavyboy】features EQ gain knobs, volume and reverb/delay sliders,
+                and
+                pitch-shifting buttons for maximum sound customizability.</div>
+
+        </div>
+        <div id="overlay"></div>
 
 
         <div class="menu-toggler" id="menutoggler" onclick="openNav()">
@@ -305,6 +339,7 @@
 
 
                                         </div>
+
                                         <section class="portfolio" id="portfolio">
                                             <div class="container" data-aos="fade-up" data-aos-duration="2000"
                                                 id="portfoliocontainer">
@@ -317,8 +352,9 @@
                                                     <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                                                         data-aos-duration="1000" class="column">
                                                         <div class="content" id="wavyboy">
-                                                            <img class="portfolioimg" src="./pictures/wavyboy.png"
-                                                                style="width:100%">
+
+                                                            <img class="portfolioimg" data-modal-target="#modal"
+                                                                src="./pictures/wavyboy.png" style="width:100%">
                                                             <h3 id="wavyboytitle">【wavyboy】synthesizer</h3>
                                                             <p>
                                                             </p>
@@ -331,7 +367,7 @@
                                                         data-aos-duration="1000">
                                                         <div class="content" id="weatherapp">
                                                             <img class="portfolioimg" src="./pictures/weatherapp.png"
-                                                                alt="Lights" style="width:100%">
+                                                                alt="weatherapp" style="width:100%">
                                                             <h3 id="weathertitle">Weather Wherever</h3>
                                                             <p></p>
                                                         </div>
@@ -341,7 +377,7 @@
                                                         data-aos-duration="1000">
                                                         <div class="content" id="adultingapp">
                                                             <img class="portfolioimg" src="./pictures/adulting.png"
-                                                                alt="Nature" style="width:100%">
+                                                                alt="adulting" style="width:100%">
                                                             <h3 id="adultingtitle">Adulting.io</h3>
                                                             <p></p>
                                                         </div>
@@ -351,7 +387,7 @@
                                                         data-aos-duration="1000">
                                                         <div class="content" id="musicwebsite">
                                                             <img class="portfolioimg" src="./pictures/musicplayer.png"
-                                                                alt="Mountains" style="width:100%">
+                                                                alt="musicplayer" style="width:100%">
                                                             <h3 id="musicwebsitetitle">Music Website Player</h3>
                                                             <p></p>
                                                         </div>
@@ -360,8 +396,8 @@
                                                         data-aos-anchor-placement="center-bottom"
                                                         data-aos-duration="1000">
                                                         <div class="content" id="snakegame">
-                                                            <img class="portfolioimg" src="./gifs/snake.gif"
-                                                                alt="Mountains" style="width:100%">
+                                                            <img class="portfolioimg" src="./gifs/snake.gif" alt="snake"
+                                                                style="width:100%">
                                                             <h3 id="snakegametitle">Snakes in a i(Frame)</h3>
                                                             <p></p>
                                                         </div>
@@ -370,11 +406,7 @@
                                                 </div>
 
                                             </div>
-                                            <div class='modal'>
-                                                <div class="modalcontents">
-                                                    <p>YO YO YO WHATS UP MAN</p>
-                                                </div>
-                                            </div>
+
                                             <div data-aos="fade-in" data-aos-duration="4000" class="contactcontents">
                                                 <section class="contact" id="contact">
                                                     <div class="sunset" id="sunsetpic">

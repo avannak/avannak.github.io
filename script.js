@@ -28,6 +28,7 @@ function openNav() {
 }
 
 function closeNav() {
+
   navisopen = false;
   console.log("navisopen is " + navisopen);
   document.getElementById("mySidenav").style.width = "0";
@@ -35,6 +36,7 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
   $('.menu-toggler').show();
 }
+
 sidenav.addEventListener("mouseleave", function () {
   document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.0)"
 });
@@ -49,10 +51,57 @@ $(document).ready(function () {
 
   });
 });
-$("#wavyboy").click(function () {
-  $(".modalcontents").toggle();
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+let modalisopen = false;
 
-});
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal)
+    modalisopen = true;
+    $("#menutoggler").fadeOut();
+    $("#toTop").fadeOut();
+    console.log("modalisopen is " + modalisopen);
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+    modalisopen = false;
+    $("#menutoggler").fadeIn();
+    $("#toTop").fadeIn();
+    console.log("modalisopen is " + modalisopen);
+  })
+})
+
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active');
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active');
+}
+window.onclick = function (event) {
+  if (event.target == overlay) {
+
+    closeModal(modal)
+    modalisopen = false;
+    $("#menutoggler").fadeIn();
+    $("#toTop").fadeIn();
+    console.log("modalisopen is " + modalisopen);
+  }
+
+}
+
 
 
 
@@ -88,14 +137,15 @@ menutoggler = document.getElementById("menutoggler");
 window.onscroll = function () { scrollFunction(), menutogglerscrollFunction() };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+  if (!modalisopen && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     $("#toTop").fadeOut();
   }
 }
 function menutogglerscrollFunction() {
-  if (!navisopen && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (!navisopen && !modalisopen && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     menutoggler.style.display = "flex";
 
 

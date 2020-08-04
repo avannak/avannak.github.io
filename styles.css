@@ -619,7 +619,7 @@ a:hover, a:active {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-    z-index: 1500;
+    z-index: 99;
     transition: 605ms ease-out;
 }
 .hidden{
@@ -636,7 +636,7 @@ a:hover, a:active {
 .bar{
     background: linear-gradient(to right, #ffffff, #ffffff);
     width: 100%;
-    height: 5px;
+    height: 6px;
     border-radius: .1rem;
 }
 
@@ -1372,22 +1372,168 @@ position: relative;
      opacity: .9;
      transition: 0.8s;
 }
-.modal{
-    position: fixed;
-    
-    height: 100%;
-    width: 100%;
-    display: hidden;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
+.modal {
+    padding: 10px;
+    border-radius: 15px;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) scale(0);
+ transition: 200ms ease-in-out;
+ 
+ box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.61);
+ background-color: rgba(48, 48, 48, 0.521);
+width: 500px;
+ max-width:80%;
+ z-index: 100;
+ overflow: hidden;
+ text-align: center;
+ 
 }
-.modalcontents{
-    background-color: #fff;
-    padding: 2rem 4rem;
-    display: none;
-    z-index: 100;
+.modal.active{
+transform: translate(-50%, -50%) scale(1);
+}
+.modal.open {
+   display: block;
+}
+.modal-header{
+    
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.modal-header .title{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-content: center;
+    word-wrap: none;
 
+}
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.modal-body{
+    padding: 10px 15px;
+    
+}
+.close-button:hover{
+   color: rgb(187, 187, 187);
+}
+.websitelinks{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;     /* center items vertically, in this case */
+    align-content: center;
+}
+.applinks{
+    
+    padding: 0;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  width: 100%;
+   
+
+}
+.linkbuttons{
+    
+    -moz-appearance: none;
+-webkit-appearance: none;
+    border: none;
+  color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+
+    font-family: 'Nanum Myeongjo', serif;
+    text-shadow: 0 2px 2px rgba(107, 107, 107, 0.219);
+    -webkit-animation: color-change-black 2s ease-in-out infinite alternate both;
+    animation: color-change-black 2s ease-in-out infinite alternate both;
+    border-style: double;
+    background-color: rgba(255, 255, 255, 0.329);
+      border-radius: 8px;
+      border-width: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+   
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgba(90, 90, 90, 0.61);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.linkbuttons:hover, .linkbuttons:focus{
+    
+        -webkit-animation-name: hvr-back-pulse;
+        animation-name: hvr-back-pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        background-color: rgba(0, 0, 0, 0.068);
+        background-color: #b8d6ff;
+        color: rgba(0, 0, 0, 0.733);
+        position: relative;
+        top: 1px;
+      
+}
+.linkbuttons:active{
+    position: relative;
+    top: 4px;
+    background-color: rgba(255, 255, 255, 0.979);
+}
+
+#githublink{
+   
+   
+}
+#livewebsitelink{
+    
+}
+
+#overlay{
+    backdrop-filter: blur(5px);
+    transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 1;
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
 }
 #ux{
     background-color: rgb(255, 255, 255);
@@ -1543,7 +1689,7 @@ font-size: 1.8rem;
     border-right-color: rgb(255, 255, 255);
     background-color: none;
     
-    border-radius: 3px;
+    border-radius: 0px;
    display: flex;
    opacity: .95;
    word-wrap: break-word;
@@ -1576,7 +1722,7 @@ font-size: 1.8rem;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
     
-    border-radius: 3px;
+    border-radius: 0px;
     display: inline-block;
     padding:25px;
     height: fit-content;
@@ -1680,6 +1826,14 @@ ul{
 }
 .wavyboy{
  
+}
+.portfolioimg:hover{
+    background-color: rgba(141, 141, 141, 0.219);
+}
+.portfolioimg:active{
+    background-color: #3131314f;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.281);
+  
 }
 #showwavydescription{
     background:none;
@@ -1845,7 +1999,7 @@ ul{
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
   }
-  #downloadresume:hover, #downloadresume:focus, #downloadresume:active {
+  #downloadresume:hover, #downloadresume:focus{
     -webkit-animation-name: hvr-back-pulse;
     animation-name: hvr-back-pulse;
     -webkit-animation-duration: 1s;
@@ -1859,6 +2013,11 @@ ul{
     background-color: rgba(0, 0, 0, 0.473);
     background-color: #55b2ff52;
     color: rgb(255, 255, 255);
+  }
+  #downloadresume:active{
+    position: relative;
+    top: 4px;
+    background-color: rgba(255, 255, 255, 0.979);
   }
 .allcontent{
     position: absolute;
