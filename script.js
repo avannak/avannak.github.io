@@ -17,7 +17,7 @@ var navisopen = false;
 
 function openNav() {
   navisopen = true;
-  console.log("navisopen is " + navisopen);
+
   document.getElementById("mySidenav").style.width = "35vmin";
   document.getElementById("mySidenav").style.height = "fit-content";
 
@@ -28,7 +28,7 @@ function openNav() {
 function closeNav() {
 
   navisopen = false;
-  console.log("navisopen is " + navisopen);
+
   document.getElementById("mySidenav").style.width = "0";
 
   document.body.style.backgroundColor = "white";
@@ -63,9 +63,9 @@ openModalButtons.forEach(button => {
     $("#menutoggler").fadeOut();
     $("#toTop").fadeOut();
     navisopen = false;
-    console.log("navisopen is " + navisopen);
+
     document.getElementById("mySidenav").style.width = "0";
-    console.log("modalisopen is " + modalisopen);
+
   })
 })
 
@@ -76,7 +76,7 @@ closeModalButtons.forEach(button => {
     modalisopen = false;
     $("#menutoggler").fadeIn();
     $("#toTop").fadeIn();
-    console.log("modalisopen is " + modalisopen);
+
   })
 })
 
@@ -102,7 +102,7 @@ window.onclick = function (event) {
     modalisopen = false;
     $("#menutoggler").fadeIn();
     $("#toTop").fadeIn();
-    console.log("modalisopen is " + modalisopen);
+
   }
 
 }
@@ -166,12 +166,5 @@ function showDivs(n) {
 
 var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function (el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
+
 
