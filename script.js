@@ -11,8 +11,6 @@ var sidenav = document.getElementById("mySidenav");
 
 
 var openingpic = document.getElementById("openingpic");
-var showwavydescbutton = document.getElementById("showwavydescription");
-var wavydesc = document.getElementById("wavydescription");
 var navisopen = false;
 
 
@@ -54,6 +52,7 @@ $(document).ready(function () {
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+const allmodal = document.getElementsByClassName('modal');
 let modalisopen = false;
 
 openModalButtons.forEach(button => {
@@ -63,6 +62,9 @@ openModalButtons.forEach(button => {
     modalisopen = true;
     $("#menutoggler").fadeOut();
     $("#toTop").fadeOut();
+    navisopen = false;
+    console.log("navisopen is " + navisopen);
+    document.getElementById("mySidenav").style.width = "0";
     console.log("modalisopen is " + modalisopen);
   })
 })
@@ -92,8 +94,11 @@ function closeModal(modal) {
 }
 window.onclick = function (event) {
   if (event.target == overlay) {
+    for (let i = 0; i < allmodal.length; i++) {
+      document.getElementsByClassName("modal")[i].classList.remove("active");
+    }
 
-    closeModal(modal)
+    overlay.classList.remove('active');
     modalisopen = false;
     $("#menutoggler").fadeIn();
     $("#toTop").fadeIn();
@@ -101,34 +106,6 @@ window.onclick = function (event) {
   }
 
 }
-
-
-
-
-$("#showadultingappdescription").click(function () {
-  $("#adultingappdescription").toggle();
-});
-$("#showmusicwebsitedescription").click(function () {
-  $("#musicwebsitedescription").toggle();
-});
-$("#showweatherappdescription").click(function () {
-  $("#weatherappdescription").toggle();
-});
-$("#showsnakegamedescription").click(function () {
-  $("#snakegamedescription").toggle();
-});
-$("#showlavalampappdescription").click(function () {
-  $("#lavalampappdescription").toggle();
-});
-
-
-
-
-
-
-
-
-
 
 //Get the button:
 mybutton = document.getElementById("toTop");
