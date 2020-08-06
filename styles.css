@@ -1415,7 +1415,7 @@ transform: translate(-50%, -50%) scale(1);
     animation: borderchange 4s infinite;
 }
 .modal-header .title{
-    text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.349);
+    text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.199);
     font-size: 2rem;
     font-weight: bold;
     display: flex;
