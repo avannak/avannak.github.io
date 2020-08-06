@@ -1068,8 +1068,9 @@ position: relative;
     
      
  }
+ 
  .portfolioimg{
-   
+    
      background-color: rgba(110, 110, 110, 0.199);
      padding: 50px;
      -moz-box-sizing: border-box; 
@@ -1090,7 +1091,7 @@ position: relative;
  
 .portfolio{
    
-   
+  
     padding: 0;
     min-height: 100vh;
    
@@ -1570,6 +1571,7 @@ transform: translate(-50%, -50%) scale(1);
 }
 .applicationimages{
     padding: 10px;
+    box-shadow:2px 2px 35px rgba(0, 0, 0, 0.555);
 }
 
 
