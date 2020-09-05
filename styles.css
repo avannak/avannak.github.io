@@ -1525,7 +1525,7 @@ transform: translate(-50%, -50%) scale(1);
     background-color: rgba(255, 255, 255, 0.979);
 }
 #overlay{
-    
+    backdrop-filter: blur(5px);
     transition: 200ms ease-in-out;
     position: fixed;
     opacity: 0;
