@@ -32,6 +32,7 @@ background-color: #261c23;
     padding: 0;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
+    font-weight: 800;
    color: white;
    text-shadow: 2px 2px 3px rgb(0, 0, 0);
   
@@ -406,7 +407,8 @@ transform: rotate(40deg) translate(-90px,0px);
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
     border-radius: 50%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
@@ -670,6 +672,7 @@ a:hover, a:active {
     position: relative;
     
     padding: 0;
+
     left: 0;
     font-size: 1em;
     color: white;
@@ -936,7 +939,7 @@ position: relative;
    
    
     
-    background: url("./pictures/sunset2.jpg");
+    background: url("./pictures/digitalsunset.jpg");
     
     
     background-attachment: fixed;
@@ -944,7 +947,7 @@ position: relative;
   background-repeat: no-repeat;
   
   
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     
 
@@ -1059,11 +1062,26 @@ position: relative;
     
 }
 #portfoliocontainer{
-    
-  
+    background-image: url("./pictures/deskblurry.jpg");
+  background-size: cover;
     position: relative;
      margin: 0;
+     background-attachment: fixed;
+  
+     background-repeat: no-repeat;
+     
+     
+       background-size: cover;
+       background-position: center;
+       
+   
+       
+     
     
+      
+      
+       margin: auto;
+      
      
     
      
@@ -1072,7 +1090,7 @@ position: relative;
  .portfolioimg{
     
      background-color: rgba(110, 110, 110, 0.199);
-     padding: 50px;
+     padding: 45px;
      -moz-box-sizing: border-box; 
      box-sizing: border-box;
      float: left;
@@ -1092,7 +1110,7 @@ position: relative;
 .portfolio{
    
   
-    padding: 0;
+    
     min-height: 100vh;
    
     width: 100vw;
@@ -1103,6 +1121,9 @@ position: relative;
     flex-direction: column;
     text-align: center;
     position: relative;
+}
+.ptitle{
+    padding: 5px;
 }
 /* Create four equal columns that floats next to each other */
 .column {
@@ -1201,6 +1222,51 @@ position: relative;
     overflow-wrap: break-word;
     font-family: "WavyRoundedBTW01-Regular";
     
+}
+#rapidhealthtitle{
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Margarine', cursive;
+    
+}
+.award{
+    font-family: 'Rubik', sans-serif;
+}
+.sflogoresponsive{
+    padding: 3px;
+    border-radius: 50%;
+    max-height: 50px;
+ max-width: 100%;
+ height: auto;   
+}
+#rapidhealthtext{
+    font-family: 'Margarine', cursive;
+}
+#rapidhealthimg{
+    background: url("./pictures/rapidhealth.jpg");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-size: contain;
+     height: 300px;
+     min-height:100%;
+    
+     
+     background-repeat:no-repeat;
+     background-position: center center;
+    
+     padding:0;
+     z-index: -1;
+     border-radius: none;
+     border-color: rgba(0,0, 0, 0.5);
+     opacity: .9;
+     transition: 0.8s;
 }
 #wavyboyimg{
     background: url("./pictures/wavyboy.png");
@@ -1344,7 +1410,7 @@ position: relative;
      opacity: .9;
      transition: 0.8s;
 }
-#lavatitle{
+/* #lavatitle{
     font-size: 24px;
     font-family: 'Flavors', cursive;
 }
@@ -1372,18 +1438,18 @@ position: relative;
      border-color: rgba(0,0, 0, 0.5);
      opacity: .9;
      transition: 0.8s;
-}
+} */
 .modal {
-    padding: 10px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
  position: fixed;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%) scale(0);
  transition: 200ms ease-in-out;
- border: 1px solid rgb(255, 255, 255);
+ 
  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.61);
- background-color: rgba(48, 48, 48, 0.521);
+ background-color: rgba(15, 15, 15, 0.561);
 width: 500px;
  min-width:30%;
  max-width:80%;
@@ -1391,7 +1457,7 @@ width: 500px;
  z-index: 100;
  overflow: hidden;
  text-align: center;
- animation: borderchange 4s infinite;
+ 
 }
 .modal.active{
     animation-name: fadein;
@@ -1405,17 +1471,20 @@ transform: translate(-50%, -50%) scale(1);
    
 }
 .modal-header{
-    
+    border-radius: 10px;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    animation: borderchange 4s infinite;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-animation: color-change-black 2s ease-in-out infinite alternate both;
+    animation: color-change-black 2s ease-in-out infinite alternate both, borderchange 4s infinite;
+    border-radius: 5px;
+    
 }
 .modal-header .title{
-    text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.199);
+    text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.055);
     font-size: 2rem;
     font-weight: bold;
     display: flex;
@@ -1431,12 +1500,12 @@ transform: translate(-50%, -50%) scale(1);
     border: none;
     outline: none;
     background: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
 }
 .modal-body{
-    padding: 10px 15px;
-    
+    padding: 10px;
+    border-radius: 10px;
     
 }
 .close-button:hover{
@@ -1476,7 +1545,7 @@ transform: translate(-50%, -50%) scale(1);
     display: inline-block;
     font-size: 1em;
 
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Rubik', sans-serif;
     text-shadow: 0 2px 2px rgba(107, 107, 107, 0.219);
     -webkit-animation: color-change-black 2s ease-in-out infinite alternate both;
     animation: color-change-black 2s ease-in-out infinite alternate both, borderchange 4s infinite;
@@ -1544,35 +1613,45 @@ transform: translate(-50%, -50%) scale(1);
 #weatherappimage{
     padding: 0;
     max-height: 50vh;
+   
 }
 #wavyappimage{
     max-height: 50vh;
     padding: 0;
+  
 }
 #weatherappimage{
     max-height: 50vh;
     padding: 0;
+    
 }
 #adultingappimage{
     max-height: 50%;
     padding: 0;
+    
 }
 #musicplayerimage{
     max-height: 50%;
     padding: 0;
+   
 }
 #snakegameimage{
     max-height: 50%;
     padding: 0;
+    
 }
 .appimages{
     
     box-shadow:2px 2px 35px rgba(255, 255, 255, 0.171);
-    border-radius: 2px;
+    border-radius: 6px;
 }
 .applicationimages{
     padding: 10px;
     box-shadow:2px 2px 35px rgba(0, 0, 0, 0.555);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 
@@ -1978,8 +2057,8 @@ ul{
 }
 #downloadsvg{
     padding: 5px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.281);
-    border-radius: 35%;
+    
+    border-radius: 20%;
     border-color: rgba(0, 0, 0, 0);
   
    
@@ -2007,8 +2086,8 @@ ul{
   }
   #resumetext{
    
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 100;
+    font-family: 'Rubik', sans-serif;
+    
       
       text-shadow: 2px 2px 2px black;
      
@@ -2022,7 +2101,7 @@ ul{
     -webkit-animation: color-change-black 2s ease-in-out infinite alternate both;
     animation: borderchange 4s infinite, color-change-black 2s ease-in-out infinite alternate both;
     border-style: double;
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color: rgba(0, 0, 0, 0.959);
       border-radius: 8px;
       border-width: 5px;
     display: flex;

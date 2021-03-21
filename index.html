@@ -25,6 +25,11 @@
     <link href="//db.onlinewebfonts.com/c/eaf39a6323f4ff98195bc75bab7ac028?family=WavyRoundedBTW01-Regular"
         rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -62,6 +67,34 @@
             <a class="scrollTo" style="text-decoration: none" href="#services">Skills</a>
             <a class="scrollTo" style="text-decoration: none" href="#portfolio">Portfolio</a>
             <a class="scrollTo" style="text-decoration: none" href="#contact">Contact</a>
+        </div>
+        <div class="modal" id="rapidhealthmodal">
+            <div class="modal-header">
+                <div class="title" id="rapidhealthtitle">RapidHealth</div>
+                <div class="award" id="award">
+                    <img src="./pictures/sfhackslogo.jpg" alt="SF Hacks logo" class= "sflogoresponsive">
+                    SF Hacks Award For Best Use of Notivize</div>
+                <button data-close-button class="close-button">&times;</button>
+
+            </div>
+            <div class="applicationimages">
+                <img class="appimages" id="rapidhealthimage" src="./pictures/rapidhealth.jpg" style="width:50%">
+            </div>
+
+            <div class="websitelinks">
+                <a class="applinks" id="githublink" href="https://devpost.com/software/sf-hacks-team" class="iconlink">
+                    <button class="linkbuttons"> <img src="pictures/icons/devpost-icon.svg" height="24" width="24"
+                            id="githubicon">
+                        Check it out on DevPost
+                    </button>
+
+                </a>
+                
+            </div>
+
+            <div class="modal-body">Entered a virtual hackathon competition with 700+ contestants and collaborated with 4 other team members. With a time limit of three days, this was the result of our work. <span id="rapidhealthtext">RapidHealth</span> sends you SMS and email notifications using Notivize, a notification API, and alerts you whenever the number of COVID-19 cases increases or decreases in your area. All you have to do is enter your contact information. Our project won an honor award for best use of Notivize's API in March, 2021.</div>
+            
+
         </div>
         <div class="modal" id="wavy">
             <div class="modal-header">
@@ -495,13 +528,28 @@
                                                 <div class="row">
                                                     <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                                                         data-aos-duration="1000" class="column">
+                                                        <div class="content" id="rapidhealth">
+
+                                                            <img class="portfolioimg"
+                                                                data-modal-target="#rapidhealthmodal"
+                                                                src="./pictures/rapidhealth.jpg" style="width:100%">
+
+
+                                                            <h3 class= "ptitle" id="rapidhealthtitle">RapidHealth</h3>
+                                                            <p>
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                                                        data-aos-duration="1000" class="column">
                                                         <div class="content" id="wavyboy">
 
                                                             <img class="portfolioimg" data-modal-target="#wavy"
                                                                 src="./pictures/wavyboy.png" style="width:100%">
 
 
-                                                            <h3 id="wavyboytitle">【wavyboy】synthesizer</h3>
+                                                            <h3 class= "ptitle" id="wavyboytitle">【wavyboy】synthesizer</h3>
                                                             <p>
                                                             </p>
                                                         </div>
@@ -515,7 +563,7 @@
                                                             <img class="portfolioimg" data-modal-target="#weathermodal"
                                                                 src="./pictures/weatherapp.png" alt="weatherapp"
                                                                 style="width:100%">
-                                                            <h3 id="weathertitle">Weather Wherever</h3>
+                                                            <h3 class= "ptitle" id="weathertitle">Weather Wherever</h3>
                                                             <p></p>
                                                         </div>
                                                     </div>
@@ -526,7 +574,7 @@
                                                             <img class="portfolioimg" data-modal-target="#adultingmodal"
                                                                 src="./pictures/adulting.png" alt="adulting"
                                                                 style="width:100%">
-                                                            <h3 id="adultingtitle">Adulting.io</h3>
+                                                            <h3 class= "ptitle" id="adultingtitle">Adulting.io</h3>
                                                             <p></p>
                                                         </div>
                                                     </div>
@@ -538,7 +586,7 @@
                                                                 data-modal-target="#musicwebsitemodal"
                                                                 src="./pictures/musicplayer.png" alt="musicplayer"
                                                                 style="width:100%">
-                                                            <h3 id="musicwebsitetitle">Music Website Player</h3>
+                                                            <h3 class= "ptitle" id="musicwebsitetitle">Music Website Player</h3>
                                                             <p></p>
                                                         </div>
                                                     </div>
@@ -548,7 +596,7 @@
                                                         <div class="content" id="snakegame">
                                                             <img class="portfolioimg" data-modal-target="#snakemodal"
                                                                 src="./gifs/snake.gif" alt="snake" style="width:100%">
-                                                            <h3 id="snakegametitle">Snakes in a i(Frame)</h3>
+                                                            <h3 class= "ptitle" id="snakegametitle">Snakes in a i(Frame)</h3>
                                                             <p></p>
                                                         </div>
                                                     </div>
@@ -625,7 +673,7 @@
                                                         <a href="/pictures/resume/arthurvresume.pdf" id="downloadresume"
                                                             download> <span id="resumetext">Download My
                                                                 Resume</span>
-                                                            <img id="downloadsvg" src="./pictures/icons/download.svg"
+                                                            <img id="downloadsvg" src="./pictures/icons/document.svg"
                                                                 height="30" width="30" alt="download resume">
                                                         </a>
 
@@ -674,7 +722,7 @@
 
 
 
-                                    </div>
+                                    
 
 
                                 </section>
