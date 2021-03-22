@@ -722,7 +722,7 @@ a:hover, a:active {
     margin: 0 auto;
     text-align: center;
     top:0;
-    background: url("./pictures/art73.jpeg");
+    background: url("./pictures/natural.jpg");
     padding: 0;
     position: relative;
     background-position: center center;
@@ -747,7 +747,7 @@ a:hover, a:active {
     right: 0;
     margin: auto;
     top: 0;
-    background: url("./pictures/art73.jpeg");
+    background: url("./pictures/natural.jpg");
     
     position: absolute;
     background-position: center center;
@@ -826,7 +826,7 @@ position: relative;
 }
 #aboutdescription{
     
-    padding-top: 20px;
+    padding-top: 10px;
    padding-left: 15vw;
    padding-right: 15vw;
     padding-bottom:0;
@@ -912,8 +912,9 @@ position: relative;
     top: 10vh;
 }
 .servicesbox{
-    
-    background-color: rgba(28, 43, 49, 0.582);
+    background: url("./pictures/green-dust-and-scratches.png");
+    background-color: #29314bed;
+    opacity: 0.7;
     position: absolute;
     height: 100%;
     width: 100vw;
@@ -927,7 +928,7 @@ position: relative;
     
     z-index: 5;
     top: 0;
-    background-color: rgba(28, 43, 49, 0.582);
+   
     overflow-x: hidden;
     overflow-y: hidden;
     box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
@@ -939,7 +940,8 @@ position: relative;
    
    
     
-    background: url("./pictures/digitalsunset.jpg");
+    background: url("./pictures/deskcolor.jpg");
+   
     
     
     background-attachment: fixed;
@@ -1062,11 +1064,9 @@ position: relative;
     
 }
 #portfoliocontainer{
-    background-image: url("./pictures/deskblurry.jpg");
-  background-size: cover;
-    position: relative;
-     margin: 0;
-     background-attachment: fixed;
+    
+  
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5, 4, 15, 0.849) 13%, rgba(0, 0, 0, 0.836) 22%, rgb(29, 29, 29) 48%, rgba(46, 46, 46, 0.822) 61%, rgb(41, 41, 41) 76%, rgba(2, 0, 34, 0.835) 93%);    
   
      background-repeat: no-repeat;
      
@@ -1077,7 +1077,17 @@ position: relative;
    
        
      
-    
+  
+       background-repeat: no-repeat;
+       
+       
+         background-size: cover;
+         background-position: center;
+         
+     
+         
+       
+      
       
       
        margin: auto;
@@ -1233,6 +1243,7 @@ position: relative;
 }
 .award{
     font-family: 'Rubik', sans-serif;
+    color: rgb(240, 240, 88);
 }
 .sflogoresponsive{
     padding: 3px;
@@ -1716,7 +1727,7 @@ transform: translate(-50%, -50%) scale(1);
     overflow-x: hidden;
     display: flex;
     width: 100vw;
-    height: 2px;
+    height: 3px;
     position: relative;
     left: 0;
 }
@@ -1739,7 +1750,7 @@ transform: translate(-50%, -50%) scale(1);
     position: relative;
 }
 .myskills{
-    
+   
    
    
     min-height: 100%;
@@ -2043,7 +2054,28 @@ ul{
     height: calc(var(--vh, 1vh) * 100);
  
    width: 100vw;
+   background-image: url("./pictures/deskcolor.jpg");
+   background: rgb(18,17,18);
+    background: linear-gradient(180deg, rgba(18,17,18,1) 0%, rgba(2,0,36,1) 39%, rgba(0,0,0,1) 82%, rgba(171,171,171,0) 100%);
+
+ background-size: cover;
+   position: relative;
+    margin: 0;
+    background-attachment: fixed;
+ 
+    background-repeat: no-repeat;
+    
+    
+      background-size: cover;
+      background-position: center;
+      
+  
+      
+    
    
+     
+     
+      margin: auto;
     position: relative;
     margin: auto;
    
