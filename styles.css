@@ -936,7 +936,7 @@ a:active {
 .servicesbox {
   background: url("./pictures/green-dust-and-scratches.png");
   background-color: #29314bed;
-  opacity: 0.7;
+  opacity: 0.4;
   position: absolute;
   height: 100%;
   width: 100vw;
@@ -957,7 +957,7 @@ a:active {
   padding: 0;
   /* Fallback for browsers that do not support Custom Properties */
 
-  background: url("./pictures/deskcolor.jpg");
+  background: url("./pictures/deskcolor2.jpg");
 
   background-attachment: fixed;
 
@@ -2087,22 +2087,11 @@ h1 {
   word-break: break-word;
   font-weight: 1000;
   font: outline;
-  opacity: 0.9;
-  transition: 0.5s;
   text-shadow: 2px 2px 1px black;
-}
-h1:hover {
-  overflow-x: hidden;
-  opacity: 1;
 }
 h6 {
   word-break: break-word;
   overflow-x: hidden;
-  opacity: 0.8;
-  transition: 0.5s;
-}
-h6:hover {
-  opacity: 1;
 }
 label {
   word-break: break-word;
@@ -2110,16 +2099,6 @@ label {
   transition: 0.5s;
 }
 label:hover {
-  opacity: 1;
-}
-p {
-}
-
-h2 {
-  opacity: 0.8;
-  transition: 0.5s;
-}
-h2:hover {
   opacity: 1;
 }
 h3 {
