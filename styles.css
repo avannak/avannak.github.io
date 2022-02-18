@@ -1922,7 +1922,7 @@ ul {
   transition: height 0.5s linear;
 }
 
-/* #showweatherappdescription {
+#showweatherappdescription {
 }
 #weatherappdescription {
 }
@@ -1951,7 +1951,7 @@ ul {
 .snakegamecontainer {
 }
 .lavalampcontainer {
-} */
+}
 
 .contact {
   min-height: 100vh;
