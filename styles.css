@@ -2087,10 +2087,14 @@ ul {
 }
 
 h1 {
+  text-align: center;
   word-break: break-word;
   font-weight: 1000;
   font: outline;
   text-shadow: 2px 2px 1px black;
+}
+h2 {
+  text-align: center;
 }
 h6 {
   word-break: break-word;
