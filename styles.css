@@ -1922,7 +1922,7 @@ ul {
   transition: height 0.5s linear;
 }
 
-#showweatherappdescription {
+/* #showweatherappdescription {
 }
 #weatherappdescription {
 }
@@ -1951,7 +1951,7 @@ ul {
 .snakegamecontainer {
 }
 .lavalampcontainer {
-}
+} */
 
 .contact {
   min-height: 100vh;
@@ -2121,7 +2121,6 @@ input {
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   div.example {
     font-size: 30px;
