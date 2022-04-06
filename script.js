@@ -6,49 +6,49 @@ window.addEventListener('load', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 var aboutcontainer = document.getElementById("aboutcontainer");
-var sidenav = document.getElementById("mySidenav");
+// var sidenav = document.getElementById("mySidenav");
 
 
 
 var openingpic = document.getElementById("openingpic");
-var navisopen = false;
+// var navisopen = false;
 
 
 
-function openNav() {
-  navisopen = true;
+// function openNav() {
+//   navisopen = true;
 
-  document.getElementById("mySidenav").style.width = "35vmin";
-  document.getElementById("mySidenav").style.height = "fit-content";
+//   document.getElementById("mySidenav").style.width = "35vmin";
+//   document.getElementById("mySidenav").style.height = "fit-content";
 
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  $('.menu-toggler').hide();
-}
+//   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+//   $('.menu-toggler').hide();
+// }
 
-function closeNav() {
+// function closeNav() {
 
-  navisopen = false;
+//   navisopen = false;
 
-  document.getElementById("mySidenav").style.width = "0";
+//   document.getElementById("mySidenav").style.width = "0";
 
-  document.body.style.backgroundColor = "white";
-  $('.menu-toggler').show();
-}
+//   document.body.style.backgroundColor = "white";
+//   $('.menu-toggler').show();
+// }
 
-sidenav.addEventListener("mouseleave", function () {
-  document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.0)"
-});
+// sidenav.addEventListener("mouseleave", function () {
+//   document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.0)"
+// });
 
-sidenav.addEventListener("mouseenter", function () {
-  document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.4)"
-});
+// sidenav.addEventListener("mouseenter", function () {
+//   document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.4)"
+// });
 
-$(document).ready(function () {
-  $('#view_details').on('click', function () {
-    $('#hidden').toggle();
+// $(document).ready(function () {
+//   $('#view_details').on('click', function () {
+//     $('#hidden').toggle();
 
-  });
-});
+//   });
+// });
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -62,7 +62,7 @@ openModalButtons.forEach(button => {
     modalisopen = true;
     $("#menutoggler").fadeOut();
     $("#toTop").fadeOut();
-    navisopen = false;
+    // navisopen = false;
 
     document.getElementById("mySidenav").style.width = "0";
 
@@ -74,7 +74,7 @@ closeModalButtons.forEach(button => {
     const modal = button.closest('.modal')
     closeModal(modal)
     modalisopen = false;
-    $("#menutoggler").fadeIn();
+    // $("#menutoggler").fadeIn();
     $("#toTop").fadeIn();
 
   })
@@ -100,7 +100,7 @@ window.onclick = function (event) {
 
     overlay.classList.remove('active');
     modalisopen = false;
-    $("#menutoggler").fadeIn();
+    // $("#menutoggler").fadeIn();
     $("#toTop").fadeIn();
 
   }
@@ -109,9 +109,9 @@ window.onclick = function (event) {
 
 //Get the button:
 mybutton = document.getElementById("toTop");
-menutoggler = document.getElementById("menutoggler");
+// menutoggler = document.getElementById("menutoggler");
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction(), menutogglerscrollFunction() };
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
 
@@ -121,15 +121,15 @@ function scrollFunction() {
     $("#toTop").fadeOut();
   }
 }
-function menutogglerscrollFunction() {
-  if (!navisopen && !modalisopen && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    menutoggler.style.display = "flex";
+// function menutogglerscrollFunction() {
+//   if (!navisopen && !modalisopen && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     menutoggler.style.display = "flex";
 
 
-  } else {
-    $("#menutoggler").fadeOut();
-  }
-}
+//   } else {
+//     $("#menutoggler").fadeOut();
+//   }
+// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
