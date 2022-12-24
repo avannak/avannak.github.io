@@ -398,7 +398,7 @@ body {
 
   z-index: 10;
 
-  font-size: 2vh;
+  font-size: 1em;
   margin-left: 0;
   padding: 0;
   display: flex;
@@ -902,9 +902,9 @@ a:active {
   margin-top: 200px;
 }
 .servicesbox {
-  background: url("./pictures/green-dust-and-scratches.png");
-  background-color: #29314bed;
-  opacity: 0.4;
+  /* background: url("./pictures/green-dust-and-scratches.png"); */
+  background-color: #2b2b2b;
+  opacity: 0.9;
   position: absolute;
   height: 100%;
   width: 100vw;
@@ -926,7 +926,6 @@ a:active {
   /* Fallback for browsers that do not support Custom Properties */
 
   background: url("./pictures/deskcolor2.jpg");
-
   background-attachment: fixed;
 
   background-repeat: no-repeat;
@@ -1025,49 +1024,31 @@ a:active {
   position: relative;
 }
 #portfoliocontainer {
-  background: linear-gradient(
-      rgb(86 86 86 / 0%) 0%,
-      rgba(121, 115, 177, 0.342) 13%,
-      rgba(255, 255, 255, 0.13) 22%,
-      rgba(255, 255, 255, 0.199) 48%,
-      rgba(255, 255, 255, 0.164) 61%,
-      rgba(255, 255, 255, 0.123) 76%,
-      rgba(255, 255, 255, 0) 93%
-    )
-    center center / cover no-repeat;
-  background-repeat: no-repeat;
 
-  background-size: cover;
-  background-position: center;
-
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-
-  margin: auto;
 }
 img {
   border-radius: 3px;
 }
 .portfolioimg {
-  background-color: rgb(255 255 255);
-  padding: 30px;
+  background-color: rgba(22, 22, 22, 0.788);
+  padding: 10px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   border-radius: 3px;
-  width: 50vw;
-  height: 33vh;
-  object-fit: contain;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
   box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.233);
 }
 .portfolioimg:hover {
-  background-color: rgba(255, 255, 255, 0.767);
+  background-color: rgba(27, 27, 27, 0.767);
   -webkit-animation: swing 1s ease;
   animation: swing 1s ease;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  cursor: pointer;
 }
 .portfolioimg:active {
   background-color: #eeeeee4f;
@@ -1075,9 +1056,7 @@ img {
 }
 
 .portfolio {
-  min-height: 100vh;
-
-  width: 100vw;
+  padding: 0;
 
   /* background-color: linear-gradient(180deg, #15161f, #18161d, #121320 100%); */
 
@@ -1094,9 +1073,9 @@ img {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-
-  float: left;
-  width: 25%;
+  width: 60%;
+  align-items: center;
+  margin: auto;
 }
 
 /* Clear floats after rows */
@@ -1109,7 +1088,6 @@ img {
 /* Content */
 .content {
   background-color: none;
-  padding: 50px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -1122,7 +1100,7 @@ img {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: 80%;
   }
 }
 @-webkit-keyframes swing {
@@ -1191,13 +1169,16 @@ img {
   font-family: "Margarine", cursive;
 }
 .award {
+  display: flex;
   font-family: "Rubik", sans-serif;
   color: rgb(240, 240, 88);
 }
 .sflogoresponsive {
   padding: 3px;
   border-radius: 50%;
-  max-height: 50px;
+  max-height: 20px;
+  align-items: center;
+  margin: auto;
   max-width: 100%;
   height: auto;
 }
@@ -1429,7 +1410,7 @@ img {
   transition: 200ms ease-in-out;
 
   /* box-shadow: 3px 3px 50px 10px rgba(255, 255, 255, 0.151); */
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: rgba(41, 41, 41, 0.979);
   width: 500px;
   min-width: 30%;
   max-width: 80%;
@@ -1456,8 +1437,8 @@ img {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 5px dotted rgba(255, 255, 255, 0.116);
-  border-radius: 2px;
+  border: 4px dotted rgba(180, 180, 180, 0.438);
+  border-radius: 5px;
 }
 .modal-header .title {
   font-size: 2rem;
@@ -1483,9 +1464,9 @@ img {
 .close-button:hover {
   color: rgb(187, 187, 187);
 }
-.close-button {
+/* .close-button {
   text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.432);
-}
+} */
 .websitelinks {
   padding: 10px;
   display: flex;
@@ -1502,18 +1483,20 @@ img {
   width: 100%;
 }
 .linkbuttons {
+  cursor: pointer;
   -moz-appearance: none;
   -webkit-appearance: none;
   border: none;
   color: rgb(255, 255, 255);
   width: 100%;
   text-align: center;
+  align-items: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1em;
 
   font-family: "Rubik", sans-serif;
-  text-shadow: 0 2px 2px rgba(107, 107, 107, 0.219);
+  /* text-shadow: 0 2px 2px rgba(107, 107, 107, 0.219); */
 
   border-style: double;
   background-color: rgba(255, 255, 255, 0.329);
@@ -1699,8 +1682,8 @@ img {
 }
 
 .skillscontainer {
-  max-width: 15vw;
-  min-width: 40%;
+  max-width: 800px;
+  min-width: 250px;
   box-shadow: 5px 2px 20px rgb(0, 0, 0);
   font-family: "Aleo", serif;
   font-weight: bolder;
@@ -1849,7 +1832,15 @@ img {
   position: relative;
 }
 .natural {
-  padding: 5vh;
+}
+.iframe {
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 568px) {
+  .iframe {
+    width: 330px;
+  }
 }
 #checkoutmysong {
   color: khaki;
@@ -1988,6 +1979,7 @@ ul {
   padding: 100px;
 }
 .container {
+  padding: 0;
 }
 
 @-webkit-keyframes hvr-back-pulse {
@@ -2010,11 +2002,11 @@ ul {
   padding: 10px;
 }
 #downloadresume {
-  -webkit-animation: color-change-black 2s ease-in-out infinite alternate both;
-  animation: borderchange 4s infinite,
-    color-change-black 2s ease-in-out infinite alternate both;
+  /* -webkit-animation: color-change-black 2s ease-in-out infinite alternate both; */
+  /* animation: borderchange 4s infinite,
+    color-change-black 2s ease-in-out infinite alternate both; */
   border-style: double;
-  background-color: rgba(0, 0, 0, 0.959);
+  background-color: rgb(0, 0, 0);
   border-radius: 8px;
   border-width: 5px;
   display: flex;
@@ -2025,8 +2017,7 @@ ul {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
-  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
   overflow: hidden;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
@@ -2045,7 +2036,7 @@ ul {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: rgb(0, 0, 0);
   background-color: #55b2ff52;
   color: rgb(255, 255, 255);
 }
