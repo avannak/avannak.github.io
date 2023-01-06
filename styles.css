@@ -1427,7 +1427,7 @@ img {
 .modal-header {
   background-color: rgba(0, 0, 0, 0.548);
   border-radius: 1px;
-  padding: 5px 15px;
+  padding: 15px 15px;
   display: flex;
   width: 90%;
   flex-direction: column;
@@ -1473,7 +1473,7 @@ img {
   color: white;
   width: 30px;
   height: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .modal-body {
   padding: 10px;
@@ -1601,12 +1601,16 @@ img {
   padding: 0;
 }
 .appimages {
+  object-fit: contain;
   box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.171);
   border-radius: 10px;
+  width: 500px;
+  height: 100%;
 }
 .applicationimages {
-  padding: 50px;
-
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 2px;
