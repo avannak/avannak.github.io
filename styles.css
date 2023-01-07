@@ -1604,13 +1604,19 @@ img {
   object-fit: contain;
   box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.171);
   border-radius: 10px;
-  width: 500px;
+  width: 100%;
   height: 100%;
 }
 .applicationimages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:auto;
+  margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
+  height: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 2px;
