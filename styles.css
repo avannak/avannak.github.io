@@ -1608,6 +1608,7 @@ img {
   height: 100%;
 }
 .applicationimages {
+  object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1616,7 +1617,6 @@ img {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
-  height: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 2px;
