@@ -895,11 +895,12 @@ a:active {
   text-align: center;
 }
 #aboutcontainer {
-  /* height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.618);
 }
 #aboutcontents {
   position: relative;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 .servicesbox {
   /* background: url("./pictures/green-dust-and-scratches.png"); */
@@ -916,7 +917,6 @@ a:active {
 #servicescontainer {
   z-index: 5;
   top: 0;
-
   overflow-x: hidden;
   overflow-y: hidden;
   box-shadow: 5px 5px 20px 20px rgb(0, 0, 0);
@@ -1010,7 +1010,6 @@ a:active {
 
 .services {
   background-color: rgba(28, 43, 49, 0.582);
-  top: 45vh;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   padding: 0;
   min-height: 100vh;
@@ -1434,7 +1433,7 @@ img {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 2px dashed rgba(180, 180, 180, 0.438);
+  border: 2px solid white;
   border-radius: 5px;
 }
 .modal-header .title {
